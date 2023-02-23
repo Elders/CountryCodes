@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Elders/CountryCodes/compare/v1.0.0...v1.0.1) (2023-02-23)
+
+
+### Bug Fixes
+
+* Fixes ISO 3166-2 inconsistancies ([4e35592](https://github.com/Elders/CountryCodes/commit/4e3559200cddd36eef127a5c8ff09a6420266a43))
+
 # 1.0.0 (2023-02-16)
 
 
