@@ -25,8 +25,7 @@ namespace Elders.Iso3166.Tests
             Because of = () => alabama = new Subdivision("US-AL");
 
             It should_have_name = () => alabama.Name.ShouldEqual("Alabama");
-            It should_have_country_code = () => alabama.CountryCode.ShouldEqual("US");
-            It should_have_region_code = () => alabama.RegionCode.ShouldEqual("AL");
+            It should_have_country_code = () => alabama.Code.ShouldEqual("US-AL");
         }
 
         class when_regions_are_equal_v1
