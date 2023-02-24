@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/Elders/CountryCodes/compare/v1.1.2...v1.1.3) (2023-02-24)
+
+
+### Bug Fixes
+
+* Code cleanup ([2d0196f](https://github.com/Elders/CountryCodes/commit/2d0196f46fd9da42a0803490b19e6407c329e7d3))
+
 ## [1.1.2](https://github.com/Elders/CountryCodes/compare/v1.1.1...v1.1.2) (2023-02-24)
 
 
