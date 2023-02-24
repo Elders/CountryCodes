@@ -1852,10 +1852,10 @@ namespace Elders.Iso3166
             return _subdivisionsPerCountry[country];
         }
 
-        //public static implicit operator Subdivision(string value)
-        //{
-        //    return new Subdivision(value);
-        //}
+        public static implicit operator Subdivision(string value)
+        {
+            return new Subdivision(value);
+        }
 
         public static bool operator ==(Subdivision left, Subdivision right)
         {
