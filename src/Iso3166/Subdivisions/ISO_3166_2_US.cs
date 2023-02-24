@@ -1,5 +1,4 @@
-﻿using System.Reflection.Emit;
-using System.Text.RegularExpressions;
+﻿using System.Diagnostics;
 
 namespace Elders.Iso3166
 {
@@ -76,6 +75,8 @@ namespace Elders.Iso3166
             Add(Country.US, "WV", "West Virginia");
             Add(Country.US, "WI", "Wisconsin");
             Add(Country.US, "WY", "Wyoming");
+
+            Debug.Assert(_subdivisionsPerCountry[Country.US].Count == 57, "Number of subdivisions is wrong.");
         }
     }
 }
