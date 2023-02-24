@@ -28,9 +28,9 @@ namespace Elders.Iso3166
         private static readonly Dictionary<Country, List<Subdivision>> _subdivisionsPerCountry = new Dictionary<Country, List<Subdivision>>();
 
         [DataMember(Order = 0)]
-        private int _id;
+        private int _subdivisionId;
 
-        public int Id => _id;
+        public int Id => _subdivisionId;
 
         static Subdivision()
         {
@@ -1809,12 +1809,13 @@ namespace Elders.Iso3166
         {
             if (_allSubdivisions.ContainsKey(subdivisionId) == false) throw new ArgumentException("The value isn't a valid subdivision code.", nameof(subdivisionId));
 
-            _id = subdivisionId;
+            _subdivisionId = subdivisionId;
         }
 
-        public string Code => GetEntry(_id).Code;
+        [DataMember(Order = 1)]
+        public string Code => GetEntry(_subdivisionId).Code;
 
-        public string Name => GetEntry(_id).Name;
+        public string Name => GetEntry(_subdivisionId).Name;
 
         private static SubdivisionTableEntry GetEntry(int subdivisionId)
         {
@@ -1878,14 +1879,14 @@ namespace Elders.Iso3166
 
         public bool Equals(Subdivision other)
         {
-            return _id == other._id;
+            return _subdivisionId == other._subdivisionId;
         }
 
         public override int GetHashCode()
         {
             unchecked
             {
-                return _id ^ 7897;
+                return _subdivisionId ^ 7897;
             }
         }
 
