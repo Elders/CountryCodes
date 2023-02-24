@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/Elders/CountryCodes/compare/v1.0.1...v1.1.0) (2023-02-24)
+
+
+### Bug Fixes
+
+* Bug fix release ([2a8d8e5](https://github.com/Elders/CountryCodes/commit/2a8d8e55e8924a9518927a8bbffd3cecf84405b3))
+
+
+### Features
+
+* Handles default/empty subdivision ([903cb8b](https://github.com/Elders/CountryCodes/commit/903cb8b6fe2b2e35c159c6981b93e0f550c04ba4))
+
 ## [1.0.1](https://github.com/Elders/CountryCodes/compare/v1.0.0...v1.0.1) (2023-02-23)
 
 
