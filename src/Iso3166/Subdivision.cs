@@ -1812,7 +1812,6 @@ namespace Elders.Iso3166
             _subdivisionId = subdivisionId;
         }
 
-        [DataMember(Order = 1)]
         public string Code => GetEntry(_subdivisionId).Code;
 
         public string Name => GetEntry(_subdivisionId).Name;
