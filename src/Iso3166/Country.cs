@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 
 namespace Elders.Iso3166
 {
@@ -11,12 +12,14 @@ namespace Elders.Iso3166
     ///     https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes
     /// </remarks>
     [Serializable]
+    [DataContract(Name = "iso-3166-country")]
     public struct Country : IEquatable<Country>
     {
         private static readonly List<Country> _countries = new List<Country>();
 
         private static readonly Dictionary<int, CountryTableEntry> _allCountries = new Dictionary<int, CountryTableEntry>();
 
+        [DataMember(Order = 0)]
         private int _countryNumericCode;
 
         static Country()

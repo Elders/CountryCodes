@@ -19,6 +19,7 @@ namespace Elders.Iso3166
     ///     because there is no standard defined for this.
     /// </remarks>
     [Serializable]
+    [DataContract(Name = "iso-3166-subdivision")]
     public partial struct Subdivision : IEquatable<Subdivision>
     {
         private static ICollection<Subdivision> _subdivisions = new List<Subdivision>();
@@ -26,7 +27,7 @@ namespace Elders.Iso3166
         private static readonly Dictionary<int, SubdivisionTableEntry> _allSubdivisions = new Dictionary<int, SubdivisionTableEntry>();
         private static readonly Dictionary<Country, List<Subdivision>> _subdivisionsPerCountry = new Dictionary<Country, List<Subdivision>>();
 
-        [DataMember(Order = 1)]
+        [DataMember(Order = 0)]
         private int _id;
 
         public int Id => _id;
