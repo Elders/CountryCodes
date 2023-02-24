@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/Elders/CountryCodes/compare/v1.1.3...v1.1.4) (2023-02-24)
+
+
+### Bug Fixes
+
+* Removes the datamember ([436db3d](https://github.com/Elders/CountryCodes/commit/436db3d5a5e8182b98ad8b384c28a751bb41391b))
+
 ## [1.1.3](https://github.com/Elders/CountryCodes/compare/v1.1.2...v1.1.3) (2023-02-24)
 
 
