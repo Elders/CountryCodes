@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/Elders/CountryCodes/compare/v1.1.0...v1.1.1) (2023-02-24)
+
+
+### Bug Fixes
+
+* Adds implicit cast to string for Subdivision ([d17ffc9](https://github.com/Elders/CountryCodes/commit/d17ffc97c2522b5ba6e367cd14290c7c8c8cfa83))
+
 # [1.1.0](https://github.com/Elders/CountryCodes/compare/v1.0.1...v1.1.0) (2023-02-24)
 
 
