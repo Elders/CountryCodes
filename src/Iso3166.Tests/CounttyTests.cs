@@ -5,17 +5,17 @@ namespace Elders.Iso3166.Tests
     [Subject(typeof(Country))]
     public class CountryTests
     {
-        static Country country1, country2, country3, country4;
+        const int TOTAL_NUMBER_OF_COUNTRIES = 249;
+
+        static Country country1, country2, country4;
         static bool isEqual;
         static bool isTrue;
-        const int TOTAL_NUMBER_OF_COUNTRIES = 249;
         static Country usCountry;
 
         Establish context = () =>
         {
             country1 = new Country(248);
             country2 = new Country(248);
-            country3 = new Country(840);
             country4 = new Country(004);
         };
 

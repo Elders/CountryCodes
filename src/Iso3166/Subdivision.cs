@@ -1852,10 +1852,10 @@ namespace Elders.Iso3166
             return _subdivisionsPerCountry[country];
         }
 
-        public static implicit operator Subdivision(string value)
-        {
-            return new Subdivision(value);
-        }
+        //public static implicit operator Subdivision(string value)
+        //{
+        //    return new Subdivision(value);
+        //}
 
         public static bool operator ==(Subdivision left, Subdivision right)
         {
@@ -1892,7 +1892,7 @@ namespace Elders.Iso3166
 
         private readonly struct SubdivisionTableEntry
         {
-            const string SubdivisionPattern = @"^[[:alnum:]]{0,3}$";
+            const string SubdivisionPattern = @"^[a-zA-Z0-9]{0,3}$";
             static Regex Validator = new Regex(SubdivisionPattern);
 
             /// <summary>
@@ -1914,7 +1914,7 @@ namespace Elders.Iso3166
             {
                 var matchResult = Validator.Match(subdivisionPart);
                 if (matchResult.Success == false)
-                    throw new ArgumentException("Invalid subdivision part.", nameof(subdivisionPart));
+                    throw new ArgumentException($"Invalid subdivision part. {subdivisionPart}", nameof(subdivisionPart));
 
                 Code = $"{countryCode}-{subdivisionPart}";
                 Id = HashCodeUtility.GetPersistentHashCode(Code);

@@ -777,10 +777,18 @@ namespace Elders.Iso3166
         public static readonly Country ZW;
         #endregion
 
+        private static int FindId(string countryCode)
+        {
+            Country country = _countries.Where(c => c.TwoLetterCode.Equals(countryCode) || c.ThreeLetterCode.Equals(countryCode)).SingleOrDefault();
+            return country.NumericCode;
+        }
+
+        public Country(string countryCode) : this(FindId(countryCode)) { }
+
         public Country(int numericCode)
         {
-            if (numericCode != 0 && _allCountries.ContainsKey(numericCode) == false)
-                throw new ArgumentOutOfRangeException(nameof(numericCode), numericCode, "The value isn't a valid ISO 3166 numeric code.");
+            if (_allCountries.ContainsKey(numericCode) == false)
+                throw new ArgumentException($"The value isn't a valid ISO 3166 numeric code. {numericCode}", nameof(numericCode));
 
             _countryNumericCode = numericCode;
         }
