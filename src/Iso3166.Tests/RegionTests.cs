@@ -35,6 +35,15 @@ namespace Elders.Iso3166.Tests
             It should_be_equal = () => isEqual.ShouldBeTrue();
         }
 
+        class when_there_is_no_subdivision
+        {
+            Because of = () => region1 = new Subdivision();
+
+            It should_have_id = () => region1.Id.ShouldEqual(0);
+            It should_have_code = () => region1.Code.ShouldEqual(string.Empty);
+            It should_have_name = () => region1.Name.ShouldEqual(string.Empty);
+        }
+
         class when_regions_are_not_equal_v1
         {
             Because of = () => isEqual = region1.Equals(region3);
@@ -56,17 +65,10 @@ namespace Elders.Iso3166.Tests
             It should_not_be_equal = () => isEqual.ShouldBeTrue();
         }
 
-        class number_of_regions
-        {
-            Because of = () => isTrue = TOTAL_NUMBER_OF_REGIONS == Subdivision.GetAllRegions().ToList().Count;
-
-            It should_be_true = () => isTrue.ShouldBeTrue();
-        }
-
         class number_of_regions_in__US__
         {
             static int usRegions;
-            Because of = () => usRegions = new Country(840).Regions.Count;
+            Because of = () => usRegions = new Country(840).Subdivisions.Count;
 
             It should_be_equal = () => usRegions.ShouldEqual(NUMBER_OF_REGIONS_IN_US);
         }

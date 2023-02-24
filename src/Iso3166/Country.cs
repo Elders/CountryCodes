@@ -5,7 +5,7 @@ using System.Linq;
 namespace Elders.Iso3166
 {
     /// <summary>
-    ///     Represents countries and coresponding regions according to ISO 3166." />
+    ///     Represents countries and coresponding subdivisions according to ISO 3166." />
     /// </summary>
     /// <remarks>
     ///     https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes
@@ -805,7 +805,7 @@ namespace Elders.Iso3166
         /// </summary>
         public string ThreeLetterCode => GetEntry(_countryNumericCode)._threeLetterCode;
 
-        public ICollection<Subdivision> Regions => Subdivision.GetCountryRegions(this);
+        public ICollection<Subdivision> Subdivisions => Subdivision.GetCountrySubdivisions(this);
 
         private static CountryTableEntry GetEntry(int countryNumericCode)
         {

@@ -4,6 +4,7 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <RootNamespace>Elders.Iso3166</RootNamespace>
     <OutputType>Library</OutputType>
+    <LangVersion>10</LangVersion>
   </PropertyGroup>
 
   <!--Nuget-->
@@ -29,7 +30,7 @@
     <AssemblyName>Elders.CountryCodes</AssemblyName>
     <NeutralLanguage>en-US</NeutralLanguage>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
-    <AssemblyVersion>0.1.0</AssemblyVersion>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
   </PropertyGroup>
 
 </Project>
