@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/Elders/CountryCodes/compare/v1.1.1...v1.1.2) (2023-02-24)
+
+
+### Bug Fixes
+
+* Adds DataContract for serialization options ([c71df59](https://github.com/Elders/CountryCodes/commit/c71df59bd67f8d60b80ce6af1e825086ac673cf2))
+
 ## [1.1.1](https://github.com/Elders/CountryCodes/compare/v1.1.0...v1.1.1) (2023-02-24)
 
 
