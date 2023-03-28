@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/Elders/CountryCodes/compare/v1.1.4...v1.2.0) (2023-03-28)
+
+
+### Bug Fixes
+
+* Fixes all countries ([cf06569](https://github.com/Elders/CountryCodes/commit/cf0656975fbd0311f9c2761497145920c99a48c0))
+
+
+### Features
+
+* Adds all subdivisions ([db98d1f](https://github.com/Elders/CountryCodes/commit/db98d1f969b9575f3d02d1b067dc73362cf36143))
+
 ## [1.1.4](https://github.com/Elders/CountryCodes/compare/v1.1.3...v1.1.4) (2023-02-24)
 
 
