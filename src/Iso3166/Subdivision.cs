@@ -163,7 +163,6 @@ namespace Elders.Iso3166
             ISO_3166_2_LY();
             ISO_3166_2_LI();
             ISO_3166_2_LT();
-            ISO_3166_2_LT();
             ISO_3166_2_LU();
             ISO_3166_2_MO();
             ISO_3166_2_MK();
@@ -227,7 +226,6 @@ namespace Elders.Iso3166
             ISO_3166_2_PM();
             ISO_3166_2_VC();
             ISO_3166_2_WS();
-            ISO_3166_2_SM();
             ISO_3166_2_SM();
             ISO_3166_2_ST();
             ISO_3166_2_SA();

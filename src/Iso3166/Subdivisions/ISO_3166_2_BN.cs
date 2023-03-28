@@ -21,7 +21,7 @@ namespace Elders.Iso3166
             Add(Country.BN, "TE", "Temburong");
             Add(Country.BN, "TU", "Tutong");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.BN].Count == 4, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.BN].Count == 4, $"{Country.BN} Number of subdivisions is wrong.");
         }
     }
 }

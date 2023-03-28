@@ -20,7 +20,7 @@ namespace Elders.Iso3166
             Add(Country.BA, "SRP", "Republika Srpska");
             Add(Country.BA, "BRC", "Brčko District");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.BA].Count == 3, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.BA].Count == 3, $"{Country.BA} Number of subdivisions is wrong.");
         }
     }
 }

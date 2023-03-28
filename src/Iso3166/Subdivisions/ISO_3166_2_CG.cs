@@ -31,7 +31,7 @@ namespace Elders.Iso3166
             Add(Country.CG, "16", "Pointe-Noire");
             Add(Country.CG, "BZV", "Brazzaville");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.CG].Count == 12, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.CG].Count == 12, $"{Country.CG} Number of subdivisions is wrong.");
         }
     }
 }

@@ -40,7 +40,7 @@ namespace Elders.Iso3166
             Add(Country.MV, "08", "Kolhumadulu");
             Add(Country.MV, "04", "Felidhu Atoll");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.MV].Count == 21, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.MV].Count == 21, $"{Country.MV} Number of subdivisions is wrong.");
         }
     }
 }

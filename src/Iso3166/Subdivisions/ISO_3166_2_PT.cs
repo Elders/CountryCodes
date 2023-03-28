@@ -39,7 +39,7 @@ namespace Elders.Iso3166
             Add(Country.PT, "20", "Região Autónoma dos Açores");
             Add(Country.PT, "30", "Região Autónoma da Madeira");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.PT].Count == 20, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.PT].Count == 20, $"{Country.PT} Number of subdivisions is wrong.");
         }
     }
 }

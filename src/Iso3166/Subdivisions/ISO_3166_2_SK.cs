@@ -25,7 +25,7 @@ namespace Elders.Iso3166
             Add(Country.SK, "TA", "Trnavský kraj");
             Add(Country.SK, "ZI", "Žilinský kraj");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.SK].Count == 8, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.SK].Count == 8, $"{Country.SK} Number of subdivisions is wrong.");
         }
     }
 }

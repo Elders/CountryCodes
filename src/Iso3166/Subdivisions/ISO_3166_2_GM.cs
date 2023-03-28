@@ -24,7 +24,7 @@ namespace Elders.Iso3166
             Add(Country.GM, "U", "Upper River");
             Add(Country.GM, "W", "Western");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.GM].Count == 6, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.GM].Count == 6, $"{Country.GM} Number of subdivisions is wrong.");
         }
     }
 }

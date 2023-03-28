@@ -31,7 +31,7 @@ namespace Elders.Iso3166
             Add(Country.SN, "TH", "Thiès");
             Add(Country.SN, "ZG", "Ziguinchor");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.SN].Count == 14, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.SN].Count == 14, $"{Country.SN} Number of subdivisions is wrong.");
         }
     }
 }

@@ -26,7 +26,7 @@ namespace Elders.Iso3166
             Add(Country.GA, "8", "Ogooué-Maritime");
             Add(Country.GA, "9", "Woleu-Ntem");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.GA].Count == 9, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.GA].Count == 9, $"{Country.GA} Number of subdivisions is wrong.");
         }
     }
 }

@@ -23,7 +23,7 @@ namespace Elders.Iso3166
             Add(Country.ER, "GB", "Gash-Barka");
             Add(Country.ER, "SK", "Northern Red Sea");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.ER].Count == 6, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.ER].Count == 6, $"{Country.ER} Number of subdivisions is wrong.");
         }
     }
 }

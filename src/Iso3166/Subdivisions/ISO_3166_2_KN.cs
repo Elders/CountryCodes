@@ -37,7 +37,7 @@ namespace Elders.Iso3166
             Add(Country.KN, "13", "Saint Thomas Middle Island");
             Add(Country.KN, "15", "Trinity Palmetto Point");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.KN].Count == 16, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.KN].Count == 16, $"{Country.KN} Number of subdivisions is wrong.");
         }
     }
 }

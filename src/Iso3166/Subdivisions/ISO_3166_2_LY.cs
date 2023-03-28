@@ -39,7 +39,7 @@ namespace Elders.Iso3166
             Add(Country.LY, "WD", "Wādī al Ḩayāt");
             Add(Country.LY, "WS", "Wādī ash Shāţi’");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.LY].Count == 22, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.LY].Count == 22, $"{Country.LY} Number of subdivisions is wrong.");
         }
     }
 }

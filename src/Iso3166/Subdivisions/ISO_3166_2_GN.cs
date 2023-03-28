@@ -63,7 +63,7 @@ namespace Elders.Iso3166
             Add(Country.GN, "TO", "Tougué");
             Add(Country.GN, "YO", "Yomou");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.GN].Count == 41, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.GN].Count == 41, $"{Country.GN} Number of subdivisions is wrong.");
         }
     }
 }

@@ -239,7 +239,7 @@ namespace Elders.Iso3166
             Add(Country.GB, "VGL", "Vale of Glamorgan, The [Bro Morgannwg GB-BMG]");
             Add(Country.GB, "WRX", "Wrexham [Wrecsam GB-WRC]");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.GB].Count == 217, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.GB].Count == 217, $"{Country.GB} Number of subdivisions is wrong.");
         }
     }
 }

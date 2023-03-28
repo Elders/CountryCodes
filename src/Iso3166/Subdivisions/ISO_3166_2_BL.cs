@@ -12,12 +12,12 @@ namespace Elders.Iso3166
         /// it is also assigned the ISO 3166-2 code FR-BL under the entry for France.
         /// </summary>
         /// <remarks>
-        /// https://en.wikipedia.org/wiki/ISO_3166-2:SX
+        /// https://en.wikipedia.org/wiki/ISO_3166-2:BL
         /// LastUpdated: 2023-03-26
         /// </remarks>
         internal static void ISO_3166_2_BL()
         {
-            Debug.Assert(_subdivisionsPerCountry[Country.SX].Count == 0, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry.ContainsKey(Country.BL) == false, $"{Country.BL} Number of subdivisions is wrong.");
         }
     }
 }

@@ -36,7 +36,7 @@ namespace Elders.Iso3166
             Add(Country.UY, "TA", "Tacuarembó");
             Add(Country.UY, "TT", "Treinta y Tres");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.UY].Count == 19, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.UY].Count == 19, $"{Country.UY} Number of subdivisions is wrong.");
         }
     }
 }

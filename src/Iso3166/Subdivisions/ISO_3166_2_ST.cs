@@ -24,7 +24,7 @@ namespace Elders.Iso3166
             Add(Country.ST, "06", "Mé-Zóchi");
             Add(Country.ST, "P", "Príncipe");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.ST].Count == 7, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.ST].Count == 7, $"{Country.ST} Number of subdivisions is wrong.");
         }
     }
 }

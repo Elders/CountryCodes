@@ -85,7 +85,7 @@ namespace Elders.Iso3166
             Add(Country.MT, "67", "Żejtun");
             Add(Country.MT, "68", "Żurrieq");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.MT].Count == 68, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.MT].Count == 68, $"{Country.MT} Number of subdivisions is wrong.");
         }
     }
 }

@@ -27,7 +27,7 @@ namespace Elders.Iso3166
             Add(Country.GY, "UD", "Upper Demerara-Berbice");
             Add(Country.GY, "UT", "Upper Takutu-Upper Essequibo");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.GY].Count == 10, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.GY].Count == 10, $"{Country.GY} Number of subdivisions is wrong.");
         }
     }
 }

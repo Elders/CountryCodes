@@ -35,7 +35,7 @@ namespace Elders.Iso3166
             Add(Country.LA, "XI", "Xiangkhouang");
             Add(Country.LA, "XS", "Xaisômboun");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.LA].Count == 18, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.LA].Count == 18, $"{Country.LA} Number of subdivisions is wrong.");
         }
     }
 }

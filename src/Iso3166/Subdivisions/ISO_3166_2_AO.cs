@@ -31,7 +31,7 @@ namespace Elders.Iso3166
             Add(Country.AO, "UIG", "Uíge");
             Add(Country.AO, "ZAI", "Zaire");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.AO].Count == 13, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.AO].Count == 13, $"{Country.AO} Number of subdivisions is wrong.");
         }
     }
 }

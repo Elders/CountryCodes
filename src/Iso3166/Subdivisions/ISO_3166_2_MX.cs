@@ -49,7 +49,7 @@ namespace Elders.Iso3166
             Add(Country.MX, "YUC", "Yucatán");
             Add(Country.MX, "ZAC", "Zacatecas");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.MX].Count == 32, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.MX].Count == 32, $"{Country.MX} Number of subdivisions is wrong.");
         }
     }
 }

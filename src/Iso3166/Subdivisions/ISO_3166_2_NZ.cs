@@ -39,7 +39,7 @@ namespace Elders.Iso3166
             Add(Country.NZ, "WKO", "Waikato");
             Add(Country.NZ, "WTC", "West Coast");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.NZ].Count == 17, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.NZ].Count == 17, $"{Country.NZ} Number of subdivisions is wrong.");
         }
     }
 }

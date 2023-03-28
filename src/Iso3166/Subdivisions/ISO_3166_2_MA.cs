@@ -34,7 +34,7 @@ namespace Elders.Iso3166
             Add(Country.MA, "09", "Souss-Massa");
             Add(Country.MA, "01", "Tanger-Tétouan-Al Hoceïma");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.MA].Count == 12, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.MA].Count == 12, $"{Country.MA} Number of subdivisions is wrong.");
         }
     }
 }

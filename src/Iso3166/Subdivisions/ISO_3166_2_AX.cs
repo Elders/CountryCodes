@@ -17,7 +17,7 @@ namespace Elders.Iso3166
         /// </remarks>
         internal static void ISO_3166_2_AX()
         {
-            Debug.Assert(_subdivisionsPerCountry[Country.AX].Count == 0, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry.ContainsKey(Country.AX) == false, $"{Country.AX} Number of subdivisions is wrong.");
         }
     }
 }

@@ -25,7 +25,7 @@ namespace Elders.Iso3166
             Add(Country.AU, "ACT", "Australian Capital Territory");
             Add(Country.AU, "NT", "Northern Territory");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.AU].Count == 8, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.AU].Count == 8, $"{Country.AU} Number of subdivisions is wrong.");
         }
     }
 }

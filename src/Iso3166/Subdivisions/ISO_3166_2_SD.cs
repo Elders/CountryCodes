@@ -35,7 +35,7 @@ namespace Elders.Iso3166
             Add(Country.SD, "SI", "Sennar");
             Add(Country.SD, "DC", "Central Darfur");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.SD].Count == 18, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.SD].Count == 18, $"{Country.SD} Number of subdivisions is wrong.");
         }
     }
 }

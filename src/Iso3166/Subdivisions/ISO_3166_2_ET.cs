@@ -30,7 +30,7 @@ namespace Elders.Iso3166
             Add(Country.ET, "SN", "Southern Nations");
             Add(Country.ET, "SW", "Southwest Ethiopia Peoples");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.ET].Count == 13, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.ET].Count == 13, $"{Country.ET} Number of subdivisions is wrong.");
         }
     }
 }

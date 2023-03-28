@@ -24,7 +24,7 @@ namespace Elders.Iso3166
             Add(Country.GL, "SM", "Kommuneqarfik Sermersooq");
             Add(Country.GL, "QE", "Qeqqata Kommunia");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.GL].Count == 5, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.GL].Count == 5, $"{Country.GL} Number of subdivisions is wrong.");
         }
     }
 }

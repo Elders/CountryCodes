@@ -23,7 +23,7 @@ namespace Elders.Iso3166
             Add(Country.VU, "TAE", "Taféa");
             Add(Country.VU, "TOB", "Torba");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.VU].Count == 6, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.VU].Count == 6, $"{Country.VU} Number of subdivisions is wrong.");
         }
     }
 }

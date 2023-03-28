@@ -24,7 +24,7 @@ namespace Elders.Iso3166
             Add(Country.CR, "P", "Puntarenas");
             Add(Country.CR, "SJ", "San José");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.CR].Count == 7, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.CR].Count == 7, $"{Country.CR} Number of subdivisions is wrong.");
         }
     }
 }

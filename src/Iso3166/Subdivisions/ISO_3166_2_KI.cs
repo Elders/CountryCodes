@@ -21,7 +21,7 @@ namespace Elders.Iso3166
             Add(Country.KI, "L", "Line Islands");
             Add(Country.KI, "P", "Phoenix Islands");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.KI].Count == 3, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.KI].Count == 3, $"{Country.KI} Number of subdivisions is wrong.");
         }
     }
 }

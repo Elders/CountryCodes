@@ -29,7 +29,7 @@ namespace Elders.Iso3166
             Add(Country.UM, "95", "Palmyra Atoll");
             Add(Country.UM, "79", "Wake Island");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.UM].Count == 9, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.UM].Count == 9, $"{Country.UM} Number of subdivisions is wrong.");
         }
     }
 }

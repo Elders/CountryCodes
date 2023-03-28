@@ -48,7 +48,7 @@ namespace Elders.Iso3166
             Add(Country.VE, "U", "Yaracuy");
             Add(Country.VE, "V", "Zulia");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.VE].Count == 25, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.VE].Count == 25, $"{Country.VE} Number of subdivisions is wrong.");
         }
     }
 }

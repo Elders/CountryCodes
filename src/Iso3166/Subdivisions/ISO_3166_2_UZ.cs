@@ -31,7 +31,7 @@ namespace Elders.Iso3166
             Add(Country.UZ, "XO", "Xorazm");
             Add(Country.UZ, "QR", "Qoraqalpog‘iston Respublikasi");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.UZ].Count == 14, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.UZ].Count == 14, $"{Country.UZ} Number of subdivisions is wrong.");
         }
     }
 }

@@ -42,7 +42,7 @@ namespace Elders.Iso3166
             Add(Country.TW, "ILA", "Yilan");
             Add(Country.TW, "YUN", "Yunlin");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.TW].Count == 22, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.TW].Count == 22, $"{Country.TW} Number of subdivisions is wrong.");
         }
     }
 }

@@ -23,7 +23,7 @@ namespace Elders.Iso3166
             Add(Country.CY, "02", "Limassol");
             Add(Country.CY, "05", "Paphos");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.CY].Count == 6, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.CY].Count == 6, $"{Country.CY} Number of subdivisions is wrong.");
         }
     }
 }

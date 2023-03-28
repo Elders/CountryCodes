@@ -78,7 +78,7 @@ namespace Elders.Iso3166
             Add(Country.BF, "ZON", "Zondoma");
             Add(Country.BF, "ZOU", "Zoundwéogo");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.BF].Count == 58, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.BF].Count == 58, $"{Country.BF} Number of subdivisions is wrong.");
         }
     }
 }

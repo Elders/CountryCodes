@@ -23,7 +23,7 @@ namespace Elders.Iso3166
             Add(Country.TM, "M", "Mary");
             Add(Country.TM, "S", "Aşgabat");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.TM].Count == 6, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.TM].Count == 6, $"{Country.TM} Number of subdivisions is wrong.");
         }
     }
 }

@@ -154,7 +154,7 @@ namespace Elders.Iso3166
             Add(Country.IT, "TO", "Torino");
             Add(Country.IT, "VE", "Venezia");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.IT].Count == 126, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.IT].Count == 126, $"{Country.IT} Number of subdivisions is wrong.");
         }
     }
 }

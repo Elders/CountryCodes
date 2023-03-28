@@ -26,7 +26,7 @@ namespace Elders.Iso3166
             Add(Country.TV, "NKL", "Nukulaelae");
             Add(Country.TV, "VAI", "Vaitupu");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.TV].Count == 8, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.TV].Count == 8, $"{Country.TV} Number of subdivisions is wrong.");
         }
     }
 }

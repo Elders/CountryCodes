@@ -163,7 +163,7 @@ namespace Elders.Iso3166
             Add(Country.UG, "313", "Yumbe");
             Add(Country.UG, "330", "Zombo");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.UG].Count == 139, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.UG].Count == 139, $"{Country.UG} Number of subdivisions is wrong.");
         }
     }
 }

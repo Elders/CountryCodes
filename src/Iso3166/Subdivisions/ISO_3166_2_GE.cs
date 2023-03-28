@@ -30,7 +30,7 @@ namespace Elders.Iso3166
             Add(Country.GE, "SJ", "Samtskhe-Javakheti");
             Add(Country.GE, "SK", "Shida Kartli");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.GE].Count == 12, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.GE].Count == 12, $"{Country.GE} Number of subdivisions is wrong.");
         }
     }
 }

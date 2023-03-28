@@ -29,7 +29,7 @@ namespace Elders.Iso3166
             Add(Country.LT, "UT", "Utena County");
             Add(Country.LT, "VL", "Vilnius County");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.LT].Count == 10, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.LT].Count == 10, $"{Country.LT} Number of subdivisions is wrong.");
         }
     }
 }

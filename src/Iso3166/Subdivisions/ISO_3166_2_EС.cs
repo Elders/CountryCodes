@@ -42,7 +42,7 @@ namespace Elders.Iso3166
             Add(Country.EC, "T", "Tungurahua");
             Add(Country.EC, "Z", "Zamora Chinchipe");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.EC].Count == 24, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.EC].Count == 24, $"{Country.EC} Number of subdivisions is wrong.");
         }
     }
 }

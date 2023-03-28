@@ -23,7 +23,7 @@ namespace Elders.Iso3166
             Add(Country.KW, "HA", "Ḩawallī");
             Add(Country.KW, "MU", "Mubārak al Kabīr");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.KW].Count == 6, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.KW].Count == 6, $"{Country.KW} Number of subdivisions is wrong.");
         }
     }
 }

@@ -55,7 +55,7 @@ namespace Elders.Iso3166
             Add(Country.MD, "UN", "Ungheni");
             Add(Country.MD, "SN", "Stînga Nistrului");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.MD].Count == 37, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.MD].Count == 37, $"{Country.MD} Number of subdivisions is wrong.");
         }
     }
 }

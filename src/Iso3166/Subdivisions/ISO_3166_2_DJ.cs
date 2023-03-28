@@ -23,7 +23,7 @@ namespace Elders.Iso3166
             Add(Country.DJ, "TA", "Tadjourah");
             Add(Country.DJ, "DJ", "Djibouti");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.DJ].Count == 6, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.DJ].Count == 6, $"{Country.DJ} Number of subdivisions is wrong.");
         }
     }
 }

@@ -33,7 +33,7 @@ namespace Elders.Iso3166
             Add(Country.LR, "RG", "River Gee");
             Add(Country.LR, "SI", "Sinoe");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.LR].Count == 15, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.LR].Count == 15, $"{Country.LR} Number of subdivisions is wrong.");
         }
     }
 }

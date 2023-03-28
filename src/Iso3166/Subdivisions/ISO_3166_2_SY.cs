@@ -31,7 +31,7 @@ namespace Elders.Iso3166
             Add(Country.SY, "RD", "Rīf Dimashq");
             Add(Country.SY, "TA", "Ţarţūs");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.SY].Count == 14, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.SY].Count == 14, $"{Country.SY} Number of subdivisions is wrong.");
         }
     }
 }

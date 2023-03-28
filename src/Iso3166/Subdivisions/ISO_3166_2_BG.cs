@@ -44,7 +44,7 @@ namespace Elders.Iso3166
             Add(Country.BG, "06", "Vratsa");
             Add(Country.BG, "28", "Yambol");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.BG].Count == 28, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.BG].Count == 28, $"{Country.BG} Number of subdivisions is wrong.");
         }
     }
 }

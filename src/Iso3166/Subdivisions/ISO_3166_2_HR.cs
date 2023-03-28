@@ -40,7 +40,7 @@ namespace Elders.Iso3166
             Add(Country.HR, "13", "Zadar");
             Add(Country.HR, "01", "Zagreb County");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.HR].Count == 21, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.HR].Count == 21, $"{Country.HR} Number of subdivisions is wrong.");
         }
     }
 }

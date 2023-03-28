@@ -28,7 +28,7 @@ namespace Elders.Iso3166
             Add(Country.ZM, "09", "Lusaka");
             Add(Country.ZM, "10", "Muchinga");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.ZM].Count == 10, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.ZM].Count == 10, $"{Country.ZM} Number of subdivisions is wrong.");
         }
     }
 }

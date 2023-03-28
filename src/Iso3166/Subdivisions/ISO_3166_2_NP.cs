@@ -24,7 +24,7 @@ namespace Elders.Iso3166
             Add(Country.NP, "P6", "Karnali");
             Add(Country.NP, "P7", "Sudurpashchim");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.NP].Count == 7, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.NP].Count == 7, $"{Country.NP} Number of subdivisions is wrong.");
         }
     }
 }

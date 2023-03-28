@@ -93,7 +93,7 @@ namespace Elders.Iso3166
             Add(Country.BD, "63", "Tangail");
             Add(Country.BD, "64", "Thakurgaon");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.BD].Count == 72, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.BD].Count == 72, $"{Country.BD} Number of subdivisions is wrong.");
         }
     }
 }

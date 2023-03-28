@@ -32,7 +32,7 @@ namespace Elders.Iso3166
             Add(Country.JM, "07", "Trelawny");
             Add(Country.JM, "10", "Westmoreland");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.JM].Count == 14, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.JM].Count == 14, $"{Country.JM} Number of subdivisions is wrong.");
         }
     }
 }

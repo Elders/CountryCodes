@@ -33,7 +33,7 @@ namespace Elders.Iso3166
             Add(Country.NA, "OD", "Otjozondjupa");
             Add(Country.NA, "CA", "Zambezi");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.NA].Count == 14, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.NA].Count == 14, $"{Country.NA} Number of subdivisions is wrong.");
         }
     }
 }

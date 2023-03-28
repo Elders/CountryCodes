@@ -27,7 +27,7 @@ namespace Elders.Iso3166
             Add(Country.SB, "TE", "Temotu");
             Add(Country.SB, "WE", "Western");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.SB].Count == 10, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.SB].Count == 10, $"{Country.SB} Number of subdivisions is wrong.");
         }
     }
 }

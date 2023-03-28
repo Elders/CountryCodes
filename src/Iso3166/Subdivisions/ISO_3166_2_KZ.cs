@@ -38,7 +38,7 @@ namespace Elders.Iso3166
             Add(Country.KZ, "75", "Almaty");
             Add(Country.KZ, "79", "Shymkent");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.KZ].Count == 20, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.KZ].Count == 20, $"{Country.KZ} Number of subdivisions is wrong.");
         }
     }
 }

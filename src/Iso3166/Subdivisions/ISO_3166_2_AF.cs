@@ -44,7 +44,7 @@ namespace Elders.Iso3166
             Add(Country.AF, "WAR", "Wardak");
             Add(Country.AF, "ZAB", "Zabul");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.AF].Count == 33, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.AF].Count == 33, $"{Country.AF} Number of subdivisions is wrong.");
         }
     }
 }

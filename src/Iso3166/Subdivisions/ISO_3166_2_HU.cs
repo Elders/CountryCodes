@@ -61,7 +61,7 @@ namespace Elders.Iso3166
             Add(Country.HU, "VM", "Veszprém");
             Add(Country.HU, "ZE", "Zalaegerszeg");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.HU].Count == 43, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.HU].Count == 43, $"{Country.HU} Number of subdivisions is wrong.");
         }
     }
 }

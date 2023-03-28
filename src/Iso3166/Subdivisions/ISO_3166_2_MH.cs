@@ -50,7 +50,7 @@ namespace Elders.Iso3166
             Add(Country.MH, "WTH", "Wotho");
             Add(Country.MH, "WTJ", "Wotje");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.MH].Count == 26, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.MH].Count == 26, $"{Country.MH} Number of subdivisions is wrong.");
         }
     }
 }

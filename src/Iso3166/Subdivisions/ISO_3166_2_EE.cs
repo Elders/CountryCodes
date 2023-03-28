@@ -112,7 +112,7 @@ namespace Elders.Iso3166
             Add(Country.EE, "919", "Võru");
             Add(Country.EE, "928", "Väike-Maarja");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.EE].Count == 94, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.EE].Count == 94, $"{Country.EE} Number of subdivisions is wrong.");
         }
     }
 }

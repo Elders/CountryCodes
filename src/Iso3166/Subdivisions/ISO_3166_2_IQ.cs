@@ -36,7 +36,7 @@ namespace Elders.Iso3166
             Add(Country.IQ, "SD", "Şalāḩ ad Dīn");
             Add(Country.IQ, "WA", "Wāsiţ");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.IQ].Count == 19, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.IQ].Count == 19, $"{Country.IQ} Number of subdivisions is wrong.");
         }
     }
 }

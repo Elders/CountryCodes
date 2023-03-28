@@ -64,7 +64,7 @@ namespace Elders.Iso3166
             Add(Country.KE, "46", "Wajir");
             Add(Country.KE, "47", "West Pokot");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.KE].Count == 47, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.KE].Count == 47, $"{Country.KE} Number of subdivisions is wrong.");
         }
     }
 }

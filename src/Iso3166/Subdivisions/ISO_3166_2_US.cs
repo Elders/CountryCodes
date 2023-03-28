@@ -76,7 +76,7 @@ namespace Elders.Iso3166
             Add(Country.US, "WI", "Wisconsin");
             Add(Country.US, "WY", "Wyoming");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.US].Count == 57, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.US].Count == 57, $"{Country.US} Number of subdivisions is wrong.");
         }
     }
 }

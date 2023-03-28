@@ -239,7 +239,7 @@ namespace Elders.Iso3166
             Add(Country.SI, "192", "Žirovnica");
             Add(Country.SI, "193", "Žužemberk");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.SI].Count == 212, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.SI].Count == 212, $"{Country.SI} Number of subdivisions is wrong.");
         }
     }
 }

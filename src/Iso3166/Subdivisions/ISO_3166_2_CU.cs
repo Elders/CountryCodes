@@ -36,7 +36,7 @@ namespace Elders.Iso3166
             Add(Country.CU, "05", "Villa Clara");
             Add(Country.CU, "99", "Isla de la Juventud");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.CU].Count == 16, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.CU].Count == 16, $"{Country.CU} Number of subdivisions is wrong.");
         }
     }
 }

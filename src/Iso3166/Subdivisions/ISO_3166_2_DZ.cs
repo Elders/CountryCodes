@@ -78,7 +78,7 @@ namespace Elders.Iso3166
             Add(Country.DZ, "57", "El Meghaier");
             Add(Country.DZ, "58", "El Meniaa");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.DZ].Count == 58, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.DZ].Count == 58, $"{Country.DZ} Number of subdivisions is wrong.");
         }
     }
 }

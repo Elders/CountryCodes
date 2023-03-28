@@ -26,7 +26,7 @@ namespace Elders.Iso3166
             Add(Country.SM, "08", "Montegiardino");
             Add(Country.SM, "09", "Serravalle");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.SM].Count == 9, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.SM].Count == 9, $"{Country.SM} Number of subdivisions is wrong.");
         }
     }
 }

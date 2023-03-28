@@ -29,7 +29,7 @@ namespace Elders.Iso3166
             Add(Country.MU, "RR", "Rivière du Rempart");
             Add(Country.MU, "SA", "Savanne");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.MU].Count == 12, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.MU].Count == 12, $"{Country.MU} Number of subdivisions is wrong.");
         }
     }
 }

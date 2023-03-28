@@ -56,7 +56,7 @@ namespace Elders.Iso3166
             Add(Country.IE, "WX", "Wexford");
             Add(Country.IE, "WW", "Wicklow");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.IE].Count == 30, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.IE].Count == 30, $"{Country.IE} Number of subdivisions is wrong.");
         }
     }
 }

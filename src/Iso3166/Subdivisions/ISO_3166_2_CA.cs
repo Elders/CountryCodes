@@ -29,7 +29,7 @@ namespace Elders.Iso3166
             Add(Country.CA, "NU", "Nunavut");
             Add(Country.CA, "YT", "Yukon");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.CA].Count == 13, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.CA].Count == 13, $"{Country.CA} Number of subdivisions is wrong.");
         }
     }
 }

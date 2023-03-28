@@ -53,7 +53,7 @@ namespace Elders.Iso3166
             Add(Country.MW, "ZO", "Zomba");
 
 
-            Debug.Assert(_subdivisionsPerCountry[Country.MW].Count == 31, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.MW].Count == 31, $"{Country.MW} Number of subdivisions is wrong.");
         }
     }
 }

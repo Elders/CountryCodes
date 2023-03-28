@@ -22,7 +22,7 @@ namespace Elders.Iso3166
             Add(Country.WF, "SG", "‘Sigave");
             Add(Country.WF, "UV", "Uvea");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.WF].Count == 3, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.WF].Count == 3, $"{Country.WF} Number of subdivisions is wrong.");
         }
     }
 }

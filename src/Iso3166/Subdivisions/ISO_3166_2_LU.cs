@@ -32,7 +32,7 @@ namespace Elders.Iso3166
             Add(Country.LU, "G", "Grevenmacher");
             Add(Country.LU, "L", "Luxemburg");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.LU].Count == 15, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.LU].Count == 15, $"{Country.LU} Number of subdivisions is wrong.");
         }
     }
 }

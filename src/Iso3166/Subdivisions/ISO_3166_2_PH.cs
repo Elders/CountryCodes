@@ -122,7 +122,7 @@ namespace Elders.Iso3166
             Add(Country.PH, "ZAS", "Zamboanga del Sur");
             Add(Country.PH, "ZSI", "Zamboanga Sibugay");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.PH].Count == 98, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.PH].Count == 98, $"{Country.PH} Number of subdivisions is wrong.");
         }
     }
 }

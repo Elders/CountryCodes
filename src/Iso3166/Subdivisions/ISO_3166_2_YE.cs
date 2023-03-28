@@ -39,7 +39,7 @@ namespace Elders.Iso3166
             Add(Country.YE, "SH", "Shabwah");
             Add(Country.YE, "TA", "Tāʻizz");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.YE].Count == 21, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.YE].Count == 22, $"{Country.YE} Number of subdivisions is wrong.");
         }
     }
 }

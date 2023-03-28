@@ -35,7 +35,7 @@ namespace Elders.Iso3166
             Add(Country.GR, "E", "Thessaly");
             Add(Country.GR, "K", "Northern Aegean");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.GR].Count == 13, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.GR].Count == 13, $"{Country.YT} Number of subdivisions is wrong.");
         }
     }
 }

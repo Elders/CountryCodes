@@ -65,7 +65,7 @@ namespace Elders.Iso3166
             Add(Country.JP, "35", "Yamaguchi");
             Add(Country.JP, "19", "Yamanashi");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.JP].Count == 47, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.JP].Count == 47, $"{Country.JP} Number of subdivisions is wrong.");
         }
     }
 }

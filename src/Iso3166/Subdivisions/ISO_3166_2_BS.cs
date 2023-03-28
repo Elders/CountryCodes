@@ -49,7 +49,7 @@ namespace Elders.Iso3166
             Add(Country.BS, "SW", "Spanish Wells");
             Add(Country.BS, "WG", "West Grand Bahama");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.BS].Count == 32, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.BS].Count == 32, $"{Country.BS} Number of subdivisions is wrong.");
         }
     }
 }

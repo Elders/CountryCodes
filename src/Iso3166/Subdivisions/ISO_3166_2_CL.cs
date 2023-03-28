@@ -33,7 +33,7 @@ namespace Elders.Iso3166
             Add(Country.CL, "TA", "Tarapacá");
             Add(Country.CL, "VS", "Valparaíso");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.CL].Count == 16, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.CL].Count == 16, $"{Country.CL} Number of subdivisions is wrong.");
         }
     }
 }

@@ -32,7 +32,7 @@ namespace Elders.Iso3166
             Add(Country.NL, "ZE", "Zeeland");
             Add(Country.NL, "ZH", "South Holland");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.NL].Count == 12, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.NL].Count == 12, $"{Country.NL} Number of subdivisions is wrong.");
         }
     }
 }

@@ -82,7 +82,7 @@ namespace Elders.Iso3166
             Add(Country.VN, "HP", "Hải Phòng");
             Add(Country.VN, "SG", "Hồ Chí Minh");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.VN].Count == 63, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.VN].Count == 63, $"{Country.VN} Number of subdivisions is wrong.");
         }
     }
 }

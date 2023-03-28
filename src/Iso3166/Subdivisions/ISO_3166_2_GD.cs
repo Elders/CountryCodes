@@ -26,7 +26,7 @@ namespace Elders.Iso3166
             Add(Country.GD, "06", "Saint Patrick");
             Add(Country.GD, "10", "Southern Grenadine Islands");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.GD].Count == 7, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.GD].Count == 7, $"{Country.GD} Number of subdivisions is wrong.");
         }
     }
 }

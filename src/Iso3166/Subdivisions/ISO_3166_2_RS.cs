@@ -61,7 +61,7 @@ namespace Elders.Iso3166
             Add(Country.RS, "05", "Zapadnobački okrug");
             Add(Country.RS, "16", "Zlatiborski okrug");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.RS].Count == 32, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.RS].Count == 32, $"{Country.RS} Number of subdivisions is wrong.");
         }
     }
 }

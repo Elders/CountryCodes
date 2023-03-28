@@ -54,7 +54,7 @@ namespace Elders.Iso3166
             Add(Country.IN, "LD", "Lakshadweep");
             Add(Country.IN, "PY", "Puducherry");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.IN].Count == 36, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.IN].Count == 36, $"{Country.IN} Number of subdivisions is wrong.");
         }
     }
 }

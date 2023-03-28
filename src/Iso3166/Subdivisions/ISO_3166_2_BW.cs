@@ -33,7 +33,7 @@ namespace Elders.Iso3166
             Add(Country.BW, "SO", "Southern");
             Add(Country.BW, "ST", "Sowa Town");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.BW].Count == 16, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.BW].Count == 16, $"{Country.BW} Number of subdivisions is wrong.");
         }
     }
 }

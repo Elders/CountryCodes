@@ -34,7 +34,7 @@ namespace Elders.Iso3166
             Add(Country.GH, "WP", "Western");
             Add(Country.GH, "WN", "Western North");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.GH].Count == 17, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.GH].Count == 17, $"{Country.GH} Number of subdivisions is wrong.");
         }
     }
 }

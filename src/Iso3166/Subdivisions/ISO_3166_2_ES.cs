@@ -97,7 +97,7 @@ namespace Elders.Iso3166
             Add(Country.ES, "ZA", "Zamora");
             Add(Country.ES, "Z", "Zaragoza");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.ES].Count == 69, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.ES].Count == 69, $"{Country.ES} Number of subdivisions is wrong.");
         }
     }
 }

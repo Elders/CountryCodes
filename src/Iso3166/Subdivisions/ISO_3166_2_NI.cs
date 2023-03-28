@@ -34,7 +34,7 @@ namespace Elders.Iso3166
             Add(Country.NI, "AN", "Costa Caribe Norte");
             Add(Country.NI, "AS", "Costa Caribe Sur");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.NI].Count == 17, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.NI].Count == 17, $"{Country.NI} Number of subdivisions is wrong.");
         }
     }
 }

@@ -40,7 +40,7 @@ namespace Elders.Iso3166
             Add(Country.SE, "T", "Örebro län");
             Add(Country.SE, "E", "Östergötlands län ");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.SE].Count == 21, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.SE].Count == 21, $"{Country.SE} Number of subdivisions is wrong.");
         }
     }
 }

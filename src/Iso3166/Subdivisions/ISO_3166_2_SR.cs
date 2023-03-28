@@ -27,7 +27,7 @@ namespace Elders.Iso3166
             Add(Country.SR, "SI", "Sipaliwini");
             Add(Country.SR, "WA", "Wanica");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.SR].Count == 10, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.SR].Count == 10, $"{Country.SR} Number of subdivisions is wrong.");
         }
     }
 }

@@ -24,7 +24,7 @@ namespace Elders.Iso3166
             Add(Country.IL, "TA", "Tel Aviv");
             Add(Country.IL, "JM", "Jerusalem");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.IL].Count == 6, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.IL].Count == 6, $"{Country.IL} Number of subdivisions is wrong.");
         }
     }
 }

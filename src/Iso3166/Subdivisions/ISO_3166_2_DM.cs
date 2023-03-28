@@ -27,7 +27,7 @@ namespace Elders.Iso3166
             Add(Country.DM, "10", "Saint Paul");
             Add(Country.DM, "11", "Saint Peter");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.DM].Count == 10, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.DM].Count == 10, $"{Country.DM} Number of subdivisions is wrong.");
         }
     }
 }

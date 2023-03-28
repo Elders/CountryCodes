@@ -17,7 +17,7 @@ namespace Elders.Iso3166
         /// </remarks>
         internal static void ISO_3166_2_GF()
         {
-            Debug.Assert(_subdivisionsPerCountry[Country.GF].Count == 0, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry.ContainsKey(Country.GF) == false, $"{Country.GF} Number of subdivisions is wrong.");
         }
     }
 }

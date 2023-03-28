@@ -22,7 +22,7 @@ namespace Elders.Iso3166
             Add(Country.TJ, "SU", "Sughd");
             Add(Country.TJ, "RA", "nohiyahoi tobei jumhurí");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.TJ].Count == 5, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.TJ].Count == 5, $"{Country.TJ} Number of subdivisions is wrong.");
         }
     }
 }

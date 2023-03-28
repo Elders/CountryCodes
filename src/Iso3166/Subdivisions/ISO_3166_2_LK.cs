@@ -56,7 +56,7 @@ namespace Elders.Iso3166
             Add(Country.LK, "91", "Ratnapura");
             Add(Country.LK, "92", "Kegalla");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.LK].Count == 34, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.LK].Count == 34, $"{Country.LK} Number of subdivisions is wrong.");
         }
     }
 }

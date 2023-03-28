@@ -38,7 +38,7 @@ namespace Elders.Iso3166
             Add(Country.FI, "18", "Uusimaa");
             Add(Country.FI, "19", "Southwest Finland");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.FI].Count == 19, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.FI].Count == 19, $"{Country.FI} Number of subdivisions is wrong.");
         }
     }
 }

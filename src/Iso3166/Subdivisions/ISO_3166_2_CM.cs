@@ -27,7 +27,7 @@ namespace Elders.Iso3166
             Add(Country.CM, "SW", "South-West");
             Add(Country.CM, "OU", "West");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.CM].Count == 10, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.CM].Count == 10, $"{Country.CM} Number of subdivisions is wrong.");
         }
     }
 }

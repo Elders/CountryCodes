@@ -40,7 +40,7 @@ namespace Elders.Iso3166
             Add(Country.TD, "OD", "Ouaddaï");
             Add(Country.TD, "WF", "Wadi Fira");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.TD].Count == 23, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.TD].Count == 23, $"{Country.TD} Number of subdivisions is wrong.");
         }
     }
 }

@@ -18,13 +18,13 @@ namespace Elders.Iso3166
         internal static void ISO_3166_2_VC()
         {
             Add(Country.VC, "01", "Charlotte");
-            Add(Country.VC, "06", "Grenadines");
             Add(Country.VC, "02", "Saint Andrew");
             Add(Country.VC, "03", "Saint David");
             Add(Country.VC, "04", "Saint George");
             Add(Country.VC, "05", "Saint Patrick");
+            Add(Country.VC, "06", "Grenadines");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.VC].Count == 5, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.VC].Count == 6, $"{Country.VC} Number of subdivisions is wrong.");
         }
     }
 }

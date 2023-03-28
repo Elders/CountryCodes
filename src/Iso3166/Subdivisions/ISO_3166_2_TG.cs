@@ -22,7 +22,7 @@ namespace Elders.Iso3166
             Add(Country.TG, "P", "Plateaux");
             Add(Country.TG, "S", "Savanes");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.TG].Count == 5, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.TG].Count == 5, $"{Country.TG} Number of subdivisions is wrong.");
         }
     }
 }

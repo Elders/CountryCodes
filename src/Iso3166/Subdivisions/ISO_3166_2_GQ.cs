@@ -32,7 +32,7 @@ namespace Elders.Iso3166
             Add(Country.GQ, "LI", "Litoral");
             Add(Country.GQ, "WN", "Wele-Nzas");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.GQ].Count == 10, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.GQ].Count == 10, $"{Country.GQ} Number of subdivisions is wrong.");
         }
     }
 }

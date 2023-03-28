@@ -40,7 +40,7 @@ namespace Elders.Iso3166
             Add(Country.PG, "WPD", "Western");
             Add(Country.PG, "WHM", "Western Highlands");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.PG].Count == 22, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.PG].Count == 22, $"{Country.PG} Number of subdivisions is wrong.");
         }
     }
 }

@@ -33,7 +33,7 @@ namespace Elders.Iso3166
             Add(Country.BH, "15", "Muharraq Governorate");
             Add(Country.BH, "17", "Northern Governorate");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.BH].Count == 16, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.BH].Count == 16, $"{Country.BH} Number of subdivisions is wrong.");
         }
     }
 }

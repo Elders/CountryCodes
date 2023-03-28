@@ -26,7 +26,7 @@ namespace Elders.Iso3166
             Add(Country.ZA, "NC", "Northern Cape");
             Add(Country.ZA, "WC", "Western Cape");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.ZA].Count == 9, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.ZA].Count == 9, $"{Country.ZA} Number of subdivisions is wrong.");
         }
     }
 }

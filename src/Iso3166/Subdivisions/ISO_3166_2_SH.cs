@@ -22,7 +22,7 @@ namespace Elders.Iso3166
             Add(Country.SH, "HL", "Saint Helena");
             Add(Country.SH, "TA", "Tristan da Cunha");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.SH].Count == 3, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.SH].Count == 3, $"{Country.SH} Number of subdivisions is wrong.");
         }
     }
 }

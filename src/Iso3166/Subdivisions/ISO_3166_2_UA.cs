@@ -52,7 +52,7 @@ namespace Elders.Iso3166
             Add(Country.UA, "30", "Kyiv");
             Add(Country.UA, "40", "Sevastopol");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.UA].Count == 27, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.UA].Count == 27, $"{Country.UA} Number of subdivisions is wrong.");
         }
     }
 }

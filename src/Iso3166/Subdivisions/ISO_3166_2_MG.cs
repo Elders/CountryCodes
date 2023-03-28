@@ -23,7 +23,7 @@ namespace Elders.Iso3166
             Add(Country.MG, "A", "Toamasina");
             Add(Country.MG, "U", "Toliara");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.MG].Count == 6, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.MG].Count == 6, $"{Country.MG} Number of subdivisions is wrong.");
         }
     }
 }

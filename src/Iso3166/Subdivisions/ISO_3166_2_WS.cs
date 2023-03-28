@@ -29,7 +29,7 @@ namespace Elders.Iso3166
             Add(Country.WS, "VF", "Va'a-o-Fonoti");
             Add(Country.WS, "VS", "Vaisigano");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.WS].Count == 11, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.WS].Count == 11, $"{Country.WS} Number of subdivisions is wrong.");
         }
     }
 }

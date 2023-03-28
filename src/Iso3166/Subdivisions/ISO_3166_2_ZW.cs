@@ -27,7 +27,7 @@ namespace Elders.Iso3166
             Add(Country.ZW, "MS", "Matabeleland South");
             Add(Country.ZW, "MI", "Midlands");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.ZW].Count == 10, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.ZW].Count == 10, $"{Country.ZW} Number of subdivisions is wrong.");
         }
     }
 }

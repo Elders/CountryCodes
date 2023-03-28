@@ -34,7 +34,7 @@ namespace Elders.Iso3166
             Add(Country.PW, "350", "Peleliu");
             Add(Country.PW, "370", "Sonsorol");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.PW].Count == 16, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.PW].Count == 16, $"{Country.PW} Number of subdivisions is wrong.");
         }
     }
 }

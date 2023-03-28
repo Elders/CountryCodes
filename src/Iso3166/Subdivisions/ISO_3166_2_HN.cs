@@ -35,7 +35,7 @@ namespace Elders.Iso3166
             Add(Country.HN, "VA", "Valle");
             Add(Country.HN, "YO", "Yoro");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.HN].Count == 18, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.HN].Count == 18, $"{Country.HN} Number of subdivisions is wrong.");
         }
     }
 }

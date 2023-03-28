@@ -26,7 +26,7 @@ namespace Elders.Iso3166
             Add(Country.AD, "05", "Ordino");
             Add(Country.AD, "06", "Sant Julià de Lòria");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.AD].Count == 7, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.AD].Count == 7, $"{Country.AD} Number of subdivisions is wrong.");
         }
     }
 }

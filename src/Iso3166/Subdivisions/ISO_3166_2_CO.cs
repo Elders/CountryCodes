@@ -52,7 +52,7 @@ namespace Elders.Iso3166
             Add(Country.CO, "VAU", "Vaupés");
             Add(Country.CO, "VID", "Vichada");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.CO].Count == 33, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.CO].Count == 33, $"{Country.CO} Number of subdivisions is wrong.");
         }
     }
 }

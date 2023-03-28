@@ -26,7 +26,7 @@ namespace Elders.Iso3166
             Add(Country.LB, "JL", "Mont-Liban");
             Add(Country.LB, "NA", "Nabatîyé");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.LB].Count == 8, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.LB].Count == 8, $"{Country.LB} Number of subdivisions is wrong.");
         }
     }
 }

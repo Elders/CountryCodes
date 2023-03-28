@@ -34,7 +34,7 @@ namespace Elders.Iso3166
             Add(Country.MC, "SP", "Spélugues");
             Add(Country.MC, "VR", "Vallon de la Rousse");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.MC].Count == 17, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.MC].Count == 17, $"{Country.MC} Number of subdivisions is wrong.");
         }
     }
 }

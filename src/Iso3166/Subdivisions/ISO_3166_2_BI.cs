@@ -35,7 +35,7 @@ namespace Elders.Iso3166
             Add(Country.BI, "RY", "Ruyigi");
             Add(Country.BI, "RT", "Rutana");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.BI].Count == 18, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.BI].Count == 18, $"{Country.BI} Number of subdivisions is wrong.");
         }
     }
 }

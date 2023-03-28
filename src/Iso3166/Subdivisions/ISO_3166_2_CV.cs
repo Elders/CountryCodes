@@ -45,7 +45,7 @@ namespace Elders.Iso3166
             Add(Country.CV, "TA", "Tarrafal");
             Add(Country.CV, "TS", "Tarrafal de São Nicolau");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.CV].Count == 24, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.CV].Count == 24, $"{Country.CV} Number of subdivisions is wrong.");
         }
     }
 }

@@ -29,7 +29,7 @@ namespace Elders.Iso3166
             Add(Country.JO, "MN", "Ma‘ān");
             Add(Country.JO, "MD", "Mādabā");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.JO].Count == 12, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.JO].Count == 12, $"{Country.JO} Number of subdivisions is wrong.");
         }
     }
 }

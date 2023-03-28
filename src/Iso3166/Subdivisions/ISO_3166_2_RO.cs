@@ -62,7 +62,7 @@ namespace Elders.Iso3166
             Add(Country.RO, "VN", "Vrancea");
             Add(Country.RO, "B", "București");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.RO].Count == 42, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.RO].Count == 42, $"{Country.RO} Number of subdivisions is wrong.");
         }
     }
 }

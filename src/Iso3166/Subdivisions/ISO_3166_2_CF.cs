@@ -37,7 +37,7 @@ namespace Elders.Iso3166
             Add(Country.CF, "KB", "Gribingui");
             Add(Country.CF, "SE", "Sangha");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.CF].Count == 17, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.CF].Count == 17, $"{Country.CF} Number of subdivisions is wrong.");
         }
     }
 }

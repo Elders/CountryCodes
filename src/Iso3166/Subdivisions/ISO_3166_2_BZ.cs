@@ -23,7 +23,7 @@ namespace Elders.Iso3166
             Add(Country.BZ, "SC", "Stann Creek");
             Add(Country.BZ, "TOL", "Toledo");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.BZ].Count == 6, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.BZ].Count == 6, $"{Country.BZ} Number of subdivisions is wrong.");
         }
     }
 }

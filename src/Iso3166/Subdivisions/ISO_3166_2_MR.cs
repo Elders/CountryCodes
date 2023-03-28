@@ -33,7 +33,7 @@ namespace Elders.Iso3166
             Add(Country.MR, "11", "Tiris Zemmour");
             Add(Country.MR, "06", "Trarza");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.MR].Count == 15, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.MR].Count == 15, $"{Country.MR} Number of subdivisions is wrong.");
         }
     }
 }

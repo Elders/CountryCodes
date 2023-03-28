@@ -24,7 +24,7 @@ namespace Elders.Iso3166
             Add(Country.AE, "RK", "Ras Al Khaimah");
             Add(Country.AE, "UQ", "Umm Al Quwain");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.AE].Count == 7, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.AE].Count == 7, $"{Country.AE} Number of subdivisions is wrong.");
         }
     }
 }

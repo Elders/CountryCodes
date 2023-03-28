@@ -22,7 +22,7 @@ namespace Elders.Iso3166
             Add(Country.DK, "85", "Region Zealand");
             Add(Country.DK, "83", "Region of Southern Denmark");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.DK].Count == 5, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.DK].Count == 5, $"{Country.DK} Number of subdivisions is wrong.");
         }
     }
 }

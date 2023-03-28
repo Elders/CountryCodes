@@ -36,7 +36,7 @@ namespace Elders.Iso3166
             Add(Country.PY, "15", "Presidente Hayes");
             Add(Country.PY, "2", "San Pedro");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.PY].Count == 18, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.PY].Count == 18, $"{Country.PY} Number of subdivisions is wrong.");
         }
     }
 }

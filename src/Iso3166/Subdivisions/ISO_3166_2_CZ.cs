@@ -126,7 +126,7 @@ namespace Elders.Iso3166
             Add(Country.CZ, "647", "Znojmo");
             Add(Country.CZ, "635", "Žďár nad Sázavou");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.CZ].Count == 90, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.CZ].Count == 90, $"{Country.CZ} Number of subdivisions is wrong.");
         }
     }
 }

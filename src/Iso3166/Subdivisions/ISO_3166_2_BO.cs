@@ -27,7 +27,7 @@ namespace Elders.Iso3166
             Add(Country.BO, "S", "Santa Cruz");
             Add(Country.BO, "T", "Tarija");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.BO].Count == 9, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.BO].Count == 9, $"{Country.BO} Number of subdivisions is wrong.");
         }
     }
 }

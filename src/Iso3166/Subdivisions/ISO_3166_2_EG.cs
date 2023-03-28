@@ -45,7 +45,7 @@ namespace Elders.Iso3166
             Add(Country.EG, "SIN", "North Sinai");
             Add(Country.EG, "SHG", "Sohag");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.EG].Count == 27, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.EG].Count == 27, $"{Country.EG} Number of subdivisions is wrong.");
         }
     }
 }

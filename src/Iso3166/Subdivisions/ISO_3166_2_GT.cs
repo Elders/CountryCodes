@@ -39,7 +39,7 @@ namespace Elders.Iso3166
             Add(Country.GT, "08", "Totonicapán");
             Add(Country.GT, "19", "Zacapa");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.GT].Count == 22, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.GT].Count == 22, $"{Country.GT} Number of subdivisions is wrong.");
         }
     }
 }

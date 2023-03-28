@@ -36,7 +36,7 @@ namespace Elders.Iso3166
             Add(Country.SO, "TO", "Togdheer");
             Add(Country.SO, "WO", "Woqooyi Galbeed");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.SO].Count == 18, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.SO].Count == 18, $"{Country.SO} Number of subdivisions is wrong.");
         }
     }
 }

@@ -31,7 +31,7 @@ namespace Elders.Iso3166
             Add(Country.CI, "YM", "Yamoussoukro");
             Add(Country.CI, "ZZ", "Zanzan");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.CI].Count == 14, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.CI].Count == 14, $"{Country.CI} Number of subdivisions is wrong.");
         }
     }
 }

@@ -33,7 +33,7 @@ namespace Elders.Iso3166
             Add(Country.PL, "30", "Greater Poland");
             Add(Country.PL, "32", "West Pomerania");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.PL].Count == 16, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.PL].Count == 16, $"{Country.PL} Number of subdivisions is wrong.");
         }
     }
 }

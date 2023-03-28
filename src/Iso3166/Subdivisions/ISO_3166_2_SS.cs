@@ -27,7 +27,7 @@ namespace Elders.Iso3166
             Add(Country.SS, "BW", "Western Bahr el Ghazal");
             Add(Country.SS, "EW", "Western Equatoria");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.SS].Count == 10, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.SS].Count == 10, $"{Country.SS} Number of subdivisions is wrong.");
         }
     }
 }

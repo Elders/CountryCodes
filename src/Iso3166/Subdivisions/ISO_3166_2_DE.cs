@@ -33,7 +33,7 @@ namespace Elders.Iso3166
             Add(Country.DE, "SH", "Schleswig-Holstein");
             Add(Country.DE, "TH", "Thuringia");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.DE].Count == 16, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.DE].Count == 16, $"{Country.DE} Number of subdivisions is wrong.");
         }
     }
 }

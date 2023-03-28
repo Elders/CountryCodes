@@ -35,7 +35,7 @@ namespace Elders.Iso3166
             Add(Country.KP, "09", "North Hamgyong");
             Add(Country.KP, "10", "Ryanggang");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.KP].Count == 13, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.KP].Count == 13, $"{Country.KP} Number of subdivisions is wrong.");
         }
     }
 }

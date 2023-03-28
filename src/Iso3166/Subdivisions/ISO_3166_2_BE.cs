@@ -35,7 +35,7 @@ namespace Elders.Iso3166
             Add(Country.BE, "VBR", "Vlaams-Brabant");
             Add(Country.BE, "VWV", "West-Vlaanderen");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.BE].Count == 13, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.BE].Count == 13, $"{Country.BE} Number of subdivisions is wrong.");
         }
     }
 }

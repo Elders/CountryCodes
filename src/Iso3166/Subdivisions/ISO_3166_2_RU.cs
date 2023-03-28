@@ -109,7 +109,7 @@ namespace Elders.Iso3166
             Add(Country.RU, "NEN", "Nenetskiy avtonomnyy okrug");
             Add(Country.RU, "YAN", "Yamalo-Nenetskiy avtonomnyy okrug");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.RU].Count == 83, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.RU].Count == 83, $"{Country.RU} Number of subdivisions is wrong.");
         }
     }
 }

@@ -36,7 +36,7 @@ namespace Elders.Iso3166
             Add(Country.RW, "M", "Mutara");
             Add(Country.RW, "H", "Ruhengeri");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.RW].Count == 17, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.RW].Count == 17, $"{Country.RW} Number of subdivisions is wrong.");
         }
     }
 }

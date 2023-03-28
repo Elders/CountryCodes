@@ -27,7 +27,7 @@ namespace Elders.Iso3166
             Add(Country.LC, "10", "Soufrière");
             Add(Country.LC, "11", "Vieux Fort");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.LC].Count == 11, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.LC].Count == 10, $"{Country.LC} Number of subdivisions is wrong.");
         }
     }
 }

@@ -45,7 +45,7 @@ namespace Elders.Iso3166
             Add(Country.CH, "ZG", "Zug");
             Add(Country.CH, "ZH", "Zürich");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.CH].Count == 26, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.CH].Count == 26, $"{Country.CH} Number of subdivisions is wrong.");
         }
     }
 }

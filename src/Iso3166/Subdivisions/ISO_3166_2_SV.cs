@@ -31,7 +31,7 @@ namespace Elders.Iso3166
             Add(Country.SV, "SO", "Sonsonate");
             Add(Country.SV, "US", "Usulután");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.SV].Count == 14, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.SV].Count == 14, $"{Country.SV} Number of subdivisions is wrong.");
         }
     }
 }

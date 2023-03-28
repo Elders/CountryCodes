@@ -48,7 +48,7 @@ namespace Elders.Iso3166
             Add(Country.SC, "22", "Saint Louis");
             Add(Country.SC, "23", "Takamaka");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.SC].Count == 27, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.SC].Count == 27, $"{Country.SC} Number of subdivisions is wrong.");
         }
     }
 }

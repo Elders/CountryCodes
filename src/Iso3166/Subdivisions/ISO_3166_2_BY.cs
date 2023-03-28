@@ -24,7 +24,7 @@ namespace Elders.Iso3166
             Add(Country.BY, "VI", "Vitebsk Region");
             Add(Country.BY, "HM", "City of Minsk");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.BY].Count == 7, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.BY].Count == 7, $"{Country.BY} Number of subdivisions is wrong.");
         }
     }
 }

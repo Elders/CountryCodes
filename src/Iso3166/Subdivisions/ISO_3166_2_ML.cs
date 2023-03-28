@@ -31,7 +31,7 @@ namespace Elders.Iso3166
             Add(Country.ML, "10", "Taoudénit");
             Add(Country.ML, "6", "Tombouctou");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.ML].Count == 11, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.ML].Count == 11, $"{Country.ML} Number of subdivisions is wrong.");
         }
     }
 }

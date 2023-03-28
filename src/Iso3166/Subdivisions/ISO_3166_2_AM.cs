@@ -28,7 +28,7 @@ namespace Elders.Iso3166
             Add(Country.AM, "TV", "Tavush");
             Add(Country.AM, "VD", "Vayots Dzor");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.AM].Count == 11, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.AM].Count == 11, $"{Country.AM} Number of subdivisions is wrong.");
         }
     }
 }

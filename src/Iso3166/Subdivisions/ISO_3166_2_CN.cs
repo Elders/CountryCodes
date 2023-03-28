@@ -55,7 +55,7 @@ namespace Elders.Iso3166
             Add(Country.CN, "YN", "Yunnan Sheng");
             Add(Country.CN, "ZJ", "Zhejiang Sheng");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.CN].Count == 34, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.CN].Count == 34, $"{Country.CN} Number of subdivisions is wrong.");
         }
     }
 }

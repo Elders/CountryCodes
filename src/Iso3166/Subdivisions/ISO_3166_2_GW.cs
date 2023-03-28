@@ -34,7 +34,7 @@ namespace Elders.Iso3166
             Add(Country.GW, "QU", "Quinara");
             Add(Country.GW, "TO", "Tombali");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.GW].Count == 12, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.GW].Count == 12, $"{Country.GW} Number of subdivisions is wrong.");
         }
     }
 }

@@ -22,7 +22,7 @@ namespace Elders.Iso3166
             Add(Country.FM, "PNI", "Pohnpei");
             Add(Country.FM, "YAP", "Yap");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.FM].Count == 4, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.FM].Count == 4, $"{Country.FM} Number of subdivisions is wrong.");
         }
     }
 }

@@ -90,7 +90,7 @@ namespace Elders.Iso3166
             Add(Country.IS, "VER", "Vesturbyggð");
             Add(Country.IS, "VOP", "Vopnafjarðarhreppur");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.IS].Count == 72, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.IS].Count == 72, $"{Country.IS} Number of subdivisions is wrong.");
         }
     }
 }

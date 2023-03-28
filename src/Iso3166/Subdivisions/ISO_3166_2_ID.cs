@@ -56,7 +56,7 @@ namespace Elders.Iso3166
             Add(Country.ID, "SU", "North Sumatra");
             Add(Country.ID, "YO", "Yogyakarta");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.ID].Count == 37, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.ID].Count == 37, $"{Country.ID} Number of subdivisions is wrong.");
         }
     }
 }

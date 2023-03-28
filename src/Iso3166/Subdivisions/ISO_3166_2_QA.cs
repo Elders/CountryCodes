@@ -25,7 +25,7 @@ namespace Elders.Iso3166
             Add(Country.QA, "ZA", "Az̧ Z̧a‘āyin");
             Add(Country.QA, "US", "Umm Şalāl");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.QA].Count == 8, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.QA].Count == 8, $"{Country.QA} Number of subdivisions is wrong.");
         }
     }
 }

@@ -31,7 +31,7 @@ namespace Elders.Iso3166
             Add(Country.OM, "SS", "Shamāl ash Sharqīyah");
             Add(Country.OM, "ZU", "Z̧ufār");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.OM].Count == 11, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.OM].Count == 11, $"{Country.OM} Number of subdivisions is wrong.");
         }
     }
 }

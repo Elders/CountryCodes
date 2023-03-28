@@ -25,7 +25,7 @@ namespace Elders.Iso3166
             Add(Country.PK, "JK", "Azad Jammu and Kashmir");
             Add(Country.PK, "GB", "Gilgit-Baltistan");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.PK].Count == 7, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.PK].Count == 7, $"{Country.PK} Number of subdivisions is wrong.");
         }
     }
 }

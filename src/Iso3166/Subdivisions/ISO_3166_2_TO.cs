@@ -22,7 +22,7 @@ namespace Elders.Iso3166
             Add(Country.TO, "04", "Tongatapu");
             Add(Country.TO, "05", "Vava'u");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.TO].Count == 5, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.TO].Count == 5, $"{Country.TO} Number of subdivisions is wrong.");
         }
     }
 }
