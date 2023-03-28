@@ -5,46 +5,46 @@ namespace Elders.Iso3166
     public partial struct Subdivision
     {
         /// <summary>
-        /// ISO 3166-2:BG is the entry for Bulgaria in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO), which defines codes for the names of the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1.
-        /// Currently for Bulgaria, ISO 3166-2 codes are defined for 28 districts.
-        /// Each code consists of two parts, separated by a hyphen. The first part is BG, the ISO 3166-1 alpha-2 code of Bulgaria. The second part is two digits (01–28). The codes are assigned in Bulgarian alphabetical order.
+        /// ISO 3166-2:AR is the entry for Argentina in ISO 3166-2, part of the ISO 3166 standard published by the International Organization for Standardization (ISO),
+        /// which defines codes for the names of the principal subdivisions (e.g., provinces or states) of all countries coded in ISO 3166-1.
+        /// Currently for Argentina, ISO 3166-2 codes are defined for 1 city and 23 provinces.
+        /// The city Buenos Aires is the capital of the country and has special status similar to the provinces.
+        /// Each code consists of two parts, separated by a hyphen.The first part is AR,
+        /// the ISO 3166-1 alpha-2 code of Argentina.The second part is a letter,originally used in vehicle registration
+        /// plates(the letters I and O are not used since they could be mistaken as 1 and 0 respectively and were left out of license plates), and currently used in postal codes.
         /// </summary>
         /// <remarks>
-        /// https://en.wikipedia.org/wiki/ISO_3166-2:BG
-        /// LastUpdated: 2023-03-15
+        /// https://en.wikipedia.org/wiki/ISO_3166-2:AR
+        /// LastUpdated: 2023-03-28
         /// </remarks>
         internal static void ISO_3166_2_AR()
         {
-            Add(Country.BG, "01", "Blagoevgrad");
-            Add(Country.BG, "02", "Burgas");
-            Add(Country.BG, "08", "Dobrich");
-            Add(Country.BG, "07", "Gabrovo");
-            Add(Country.BG, "26", "Haskovo");
-            Add(Country.BG, "09", "Kardzhali");
-            Add(Country.BG, "10", "Kyustendil");
-            Add(Country.BG, "11", "Lovech");
-            Add(Country.BG, "12", "Montana");
-            Add(Country.BG, "13", "Pazardzhik");
-            Add(Country.BG, "14", "Pernik");
-            Add(Country.BG, "15", "Pleven");
-            Add(Country.BG, "16", "Plovdiv");
-            Add(Country.BG, "17", "Razgrad");
-            Add(Country.BG, "18", "Ruse");
-            Add(Country.BG, "27", "Shumen");
-            Add(Country.BG, "19", "Silistra");
-            Add(Country.BG, "20", "Sliven");
-            Add(Country.BG, "21", "Smolyan");
-            Add(Country.BG, "23", "Sofia");
-            Add(Country.BG, "22", "Sofia (stolitsa)");
-            Add(Country.BG, "24", "Stara Zagora");
-            Add(Country.BG, "25", "Targovishte");
-            Add(Country.BG, "03", "Varna");
-            Add(Country.BG, "04", "Veliko Tarnovo");
-            Add(Country.BG, "05", "Vidin");
-            Add(Country.BG, "06", "Vratsa");
-            Add(Country.BG, "28", "Yambol");
+            Add(Country.AR, "C", "Ciudad Autónoma de Buenos Aires");
+            Add(Country.AR, "B", "Buenos Aires");
+            Add(Country.AR, "K", "Catamarca");
+            Add(Country.AR, "H", "Chaco");
+            Add(Country.AR, "U", "Chubut");
+            Add(Country.AR, "X", "Córdoba");
+            Add(Country.AR, "W", "Corrientes");
+            Add(Country.AR, "E", "Entre Ríos");
+            Add(Country.AR, "P", "Formosa");
+            Add(Country.AR, "Y", "Jujuy");
+            Add(Country.AR, "L", "La Pampa");
+            Add(Country.AR, "F", "La Rioja");
+            Add(Country.AR, "M", "Mendoza");
+            Add(Country.AR, "N", "Misiones");
+            Add(Country.AR, "Q", "Neuquén");
+            Add(Country.AR, "R", "Río Negro");
+            Add(Country.AR, "A", "Salta");
+            Add(Country.AR, "J", "San Juan");
+            Add(Country.AR, "D", "San Luis");
+            Add(Country.AR, "Z", "Santa Cruz");
+            Add(Country.AR, "S", "Santa Fe");
+            Add(Country.AR, "G", "Santiago del Estero");
+            Add(Country.AR, "V", "Tierra del Fuego");
+            Add(Country.AR, "T", "Tucumán");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.BG].Count == 28, "Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.AR].Count == 24, "Number of subdivisions is wrong.");
         }
     }
 }
