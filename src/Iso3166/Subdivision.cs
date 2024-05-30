@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
 
@@ -22,15 +22,13 @@ namespace Elders.Iso3166
     [DataContract(Name = "iso-3166-subdivision")]
     public partial struct Subdivision : IEquatable<Subdivision>
     {
-        private static ICollection<Subdivision> _subdivisions = new List<Subdivision>();
-
         private static readonly Dictionary<int, SubdivisionTableEntry> _allSubdivisions = new Dictionary<int, SubdivisionTableEntry>();
         private static readonly Dictionary<Country, List<Subdivision>> _subdivisionsPerCountry = new Dictionary<Country, List<Subdivision>>();
 
         [DataMember(Order = 0)]
         private int _subdivisionId;
 
-        public int Id => _subdivisionId;
+        public readonly int Id => _subdivisionId;
 
         static Subdivision()
         {
@@ -283,22 +281,20 @@ namespace Elders.Iso3166
             ISO_3166_2_YE();
             ISO_3166_2_ZM();
             ISO_3166_2_ZW();
-
-            _subdivisions = _allSubdivisions.Select(rr => new Subdivision(rr.Key)).ToList();
         }
 
-        public Subdivision(string code) : this(GetId(code)) { }
+        public Subdivision(string code) : this(HashCodeUtility.GetPersistentHashCode(code)) { }
 
-        public Subdivision(int subdivisionId)
+        internal Subdivision(int subdivisionId)
         {
             if (_allSubdivisions.ContainsKey(subdivisionId) == false) throw new ArgumentException("The value isn't a valid subdivision code.", nameof(subdivisionId));
 
             _subdivisionId = subdivisionId;
         }
 
-        public string Code => GetEntry(_subdivisionId).Code;
+        public readonly string Code => GetEntry(_subdivisionId).Code;
 
-        public string Name => GetEntry(_subdivisionId).Name;
+        public readonly string Name => GetEntry(_subdivisionId).Name;
 
         private static SubdivisionTableEntry GetEntry(int subdivisionId)
         {
@@ -307,8 +303,6 @@ namespace Elders.Iso3166
 
             return entry;
         }
-
-        private static int GetId(string code) => HashCodeUtility.GetPersistentHashCode(code);
 
         internal static void Add(Country country, string secondPart, string name)
         {
@@ -327,14 +321,14 @@ namespace Elders.Iso3166
             _subdivisionsPerCountry[country].Add(subdivision);
         }
 
-        private static readonly List<Subdivision> NoSubdivisions = new List<Subdivision>();
+        private static readonly ReadOnlyCollection<Subdivision> NoSubdivisions = new List<Subdivision>().AsReadOnly();
 
-        internal static ICollection<Subdivision> GetCountrySubdivisions(Country country)
+        internal static ReadOnlyCollection<Subdivision> GetCountrySubdivisions(Country country)
         {
             if (_subdivisionsPerCountry.ContainsKey(country) == false)
                 return NoSubdivisions;
 
-            return _subdivisionsPerCountry[country];
+            return _subdivisionsPerCountry[country].AsReadOnly();
         }
 
         public static implicit operator Subdivision(string value)
@@ -352,7 +346,7 @@ namespace Elders.Iso3166
             return left.Equals(right) == false;
         }
 
-        public override bool Equals(object obj)
+        public readonly override bool Equals(object obj)
         {
             if (obj is Subdivision subdivision)
                 return Equals(subdivision);
@@ -360,12 +354,12 @@ namespace Elders.Iso3166
             return false;
         }
 
-        public bool Equals(Subdivision other)
+        public readonly bool Equals(Subdivision other)
         {
             return _subdivisionId == other._subdivisionId;
         }
 
-        public override int GetHashCode()
+        public readonly override int GetHashCode()
         {
             unchecked
             {
@@ -373,7 +367,7 @@ namespace Elders.Iso3166
             }
         }
 
-        public override string ToString() => Code;
+        public readonly override string ToString() => Code;
 
         private readonly struct SubdivisionTableEntry
         {

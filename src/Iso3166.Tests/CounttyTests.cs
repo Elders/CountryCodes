@@ -1,4 +1,5 @@
-﻿using Machine.Specifications;
+﻿using System.Linq;
+using Machine.Specifications;
 
 namespace Elders.Iso3166.Tests
 {
@@ -69,7 +70,7 @@ namespace Elders.Iso3166.Tests
 
         class total_number_of_countries
         {
-            Because of = () => isTrue = TOTAL_NUMBER_OF_COUNTRIES == Country.GetAllCountries().Count;
+            Because of = () => isTrue = TOTAL_NUMBER_OF_COUNTRIES == Country.GetAllCountries().Count();
 
             It should_be_true = () => isTrue.ShouldBeTrue();
         }

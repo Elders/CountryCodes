@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using Machine.Specifications;
+﻿using Machine.Specifications;
 
 namespace Elders.Iso3166.Tests
 {

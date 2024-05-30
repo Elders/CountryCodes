@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.Serialization;
 
@@ -15,8 +17,6 @@ namespace Elders.Iso3166
     [DataContract(Name = "iso-3166-country")]
     public struct Country : IEquatable<Country>
     {
-        private static readonly List<Country> _countries = new List<Country>();
-
         private static readonly Dictionary<int, CountryTableEntry> _allCountries = new Dictionary<int, CountryTableEntry>();
 
         [DataMember(Order = 0)]
@@ -524,7 +524,11 @@ namespace Elders.Iso3166
             ZM = new Country(894);
             ZW = new Country(716);
 
-            _countries = _allCountries.Select(cc => new Country(cc.Key)).ToList();
+            Debug.Assert(_allCountries.All(x => x.Key == x.Value._numericCode));
+            Debug.Assert(_allCountries.Values.Select(x => x._name).Distinct().Count() == _allCountries.Count);
+            Debug.Assert(_allCountries.Values.Select(x => x._twoLetterCode).Distinct().Count() == _allCountries.Count);
+            Debug.Assert(_allCountries.Values.Select(x => x._threeLetterCode).Distinct().Count() == _allCountries.Count);
+            Debug.Assert(_allCountries.Values.Select(x => x._numericCode).Distinct().Count() == _allCountries.Count);
         }
 
         #region Static Country Fields
@@ -780,13 +784,7 @@ namespace Elders.Iso3166
         public static readonly Country ZW;
         #endregion
 
-        private static int FindId(string countryCode)
-        {
-            Country country = _countries.Where(c => c.TwoLetterCode.Equals(countryCode) || c.ThreeLetterCode.Equals(countryCode)).SingleOrDefault();
-            return country.NumericCode;
-        }
-
-        public Country(string countryCode) : this(FindId(countryCode)) { }
+        public Country(string countryCode) : this(FindId(countryCode, nameof(countryCode))) { }
 
         public Country(int numericCode)
         {
@@ -799,34 +797,46 @@ namespace Elders.Iso3166
         /// <summary>
         /// ISO 3166-1 numeric – three-digit country codes which are identical to those developed and maintained by the United Nations Statistics Division, with the advantage of script (writing system) independence, and hence useful for people or systems using non-Latin scripts.
         /// </summary>
-        public int NumericCode => _countryNumericCode;
+        public readonly int NumericCode => _countryNumericCode;
 
         /// <summary>
         /// Country name
         /// </summary>
-        public string Name => GetEntry(_countryNumericCode)._name;
+        public readonly string Name => GetEntry(_countryNumericCode)._name;
 
         /// <summary>
         /// ISO 3166-1 alpha-2 – two-letter country codes which are also used to create the ISO 3166-2 country subdivision codes and the Internet country code top-level domains.
         /// </summary>
-        public string TwoLetterCode => GetEntry(_countryNumericCode)._twoLetterCode;
+        public readonly string TwoLetterCode => GetEntry(_countryNumericCode)._twoLetterCode;
 
         /// <summary>
         /// ISO 3166-1 alpha-3 – three-letter country codes which may allow a better visual association between the codes and the country names than the 3166-1 alpha-2 codes.
         /// </summary>
-        public string ThreeLetterCode => GetEntry(_countryNumericCode)._threeLetterCode;
+        public readonly string ThreeLetterCode => GetEntry(_countryNumericCode)._threeLetterCode;
 
-        public ICollection<Subdivision> Subdivisions => Subdivision.GetCountrySubdivisions(this);
+        public readonly ReadOnlyCollection<Subdivision> Subdivisions => Subdivision.GetCountrySubdivisions(this);
+
+        private static int FindId(string countryCode, string paramName = null) // CallerArgumentExpression is unavailable
+        {
+            foreach (var country in _allCountries) // replacing Linq with foreach massively reduces allocations and improves object initialization time
+            {
+                if (country.Value._twoLetterCode.Equals(countryCode) || country.Value._threeLetterCode.Equals(countryCode))
+                {
+                    return country.Value._numericCode; // no need to continue because the check for uniqueness was done in the static constructor
+                }
+            }
+
+            throw new ArgumentException($"Invalid country code {countryCode}", paramName ?? nameof(countryCode));
+        }
 
         private static CountryTableEntry GetEntry(int countryNumericCode)
         {
             if (_allCountries.TryGetValue(countryNumericCode, out CountryTableEntry entry) == false)
                 throw new ArgumentException($"Unknown country: {countryNumericCode}");
-
             return entry;
         }
 
-        public static ICollection<Country> GetAllCountries() => _countries;
+        public static IEnumerable<Country> GetAllCountries() => _allCountries.Keys.Select(x => new Country(x));
 
         public static bool operator ==(Country left, Country right)
         {
@@ -838,7 +848,7 @@ namespace Elders.Iso3166
             return left.Equals(right) == false;
         }
 
-        public override bool Equals(object obj)
+        public override readonly bool Equals(object obj)
         {
             if (obj is Country other)
                 return Equals(other);
@@ -846,12 +856,12 @@ namespace Elders.Iso3166
             return false;
         }
 
-        public bool Equals(Country other)
+        public readonly bool Equals(Country other)
         {
             return _countryNumericCode == other._countryNumericCode;
         }
 
-        public override int GetHashCode()
+        public override readonly int GetHashCode()
         {
             unchecked
             {
@@ -859,7 +869,7 @@ namespace Elders.Iso3166
             }
         }
 
-        public override string ToString() => TwoLetterCode;
+        public override readonly string ToString() => TwoLetterCode;
 
         private readonly struct CountryTableEntry
         {
