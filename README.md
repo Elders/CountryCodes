@@ -10,15 +10,15 @@ All countries and subdivisions based on ISO 3166
 ```csharp
 foreach (var country in Country.GetAllCountries())
 {
-    Console.WriteLine(country); // Two-letter code
+    Console.WriteLine(country); // Two-letter code (e.g. "US")
     Console.WriteLine(country.Name);
-    Console.WriteLine(country.TwoLetterCode);
+    Console.WriteLine(country.TwoLetterCode); 
     Console.WriteLine(country.ThreeLetterCode);
     Console.WriteLine(country.NumericCode);
 
     foreach (var subdivision in country.Subdivisions)
     {
-        Console.WriteLine(subdivision); // Two-letter code
+        Console.WriteLine(subdivision); // Subdivision code (e.g. "US-AL" for Alabama)
         Console.WriteLine(subdivision.Name);
         Console.WriteLine(subdivision.Code);
     }
