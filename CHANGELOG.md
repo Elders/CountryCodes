@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Elders/CountryCodes/compare/v1.2.0...v1.3.0) (2024-05-30)
+
+
+### Features
+
+* license ([ce7b601](https://github.com/Elders/CountryCodes/commit/ce7b601de1c10bd7b868c0fd0f4f226e1a0e4f8b))
+
 # [1.2.0](https://github.com/Elders/CountryCodes/compare/v1.1.4...v1.2.0) (2023-03-28)
 
 
