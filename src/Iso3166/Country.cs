@@ -784,7 +784,7 @@ namespace Elders.Iso3166
         public static readonly Country ZW;
         #endregion
 
-        public Country(string countryCode) : this(FindId(countryCode, nameof(countryCode))) { }
+        public Country(string countryCode) : this(FindId(countryCode)) { }
 
         public Country(int numericCode)
         {
@@ -816,7 +816,7 @@ namespace Elders.Iso3166
 
         public readonly ReadOnlyCollection<Subdivision> Subdivisions => Subdivision.GetCountrySubdivisions(this);
 
-        private static int FindId(string countryCode, string paramName = null) // CallerArgumentExpression is unavailable
+        private static int FindId(string countryCode)
         {
             foreach (var country in _allCountries) // replacing Linq with foreach massively reduces allocations and improves object initialization time
             {
@@ -826,7 +826,7 @@ namespace Elders.Iso3166
                 }
             }
 
-            throw new ArgumentException($"Invalid country code {countryCode}", paramName ?? nameof(countryCode));
+            throw new ArgumentException($"Invalid country code {countryCode}", nameof(countryCode));
         }
 
         private static CountryTableEntry GetEntry(int countryNumericCode)
