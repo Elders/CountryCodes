@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/Elders/CountryCodes/compare/v2.0.0...v2.0.1) (2024-05-31)
+
+
+### Bug Fixes
+
+* do not pass the parameter name from the Country ctor ([d8374a1](https://github.com/Elders/CountryCodes/commit/d8374a173358219f31c10bb1494ecf669ee60a6c))
+
 # [2.0.0](https://github.com/Elders/CountryCodes/compare/v1.3.0...v2.0.0) (2024-05-30)
 
 # [1.3.0](https://github.com/Elders/CountryCodes/compare/v1.2.0...v1.3.0) (2024-05-30)
