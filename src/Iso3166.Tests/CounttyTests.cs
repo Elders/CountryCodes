@@ -74,5 +74,29 @@ namespace Elders.Iso3166.Tests
 
             It should_be_true = () => isTrue.ShouldBeTrue();
         }
+
+        class when_serializing_country
+        {
+            static string json;
+            Because of = () =>
+            {
+                var serializer = new TestJsonSerializer();
+                json = serializer.Serialize(Country.BG);
+            };
+
+            It should_be_equal = () => json.ShouldEqual("""{"$type":"Elders.Iso3166.Country, Elders.CountryCodes","0":100}""");
+        }
+
+        class when_deserializing_country
+        {
+            static Country us;
+            Because of = () =>
+            {
+                var serializer = new TestJsonSerializer();
+                us = serializer.Deserialize<Country>("""{"$type":"Elders.Iso3166.Country, Elders.CountryCodes","0":840}""");
+            };
+
+            It should_be_equal = () => us.ShouldEqual(Country.US);
+        }
     }
 }

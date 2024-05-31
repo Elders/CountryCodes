@@ -72,5 +72,30 @@ namespace Elders.Iso3166.Tests
 
             It should_be_equal = () => usSubdivisions.ShouldEqual(NUMBER_OF_REGIONS_IN_US);
         }
+
+        class when_serializing_subdivision
+        {
+            static string json;
+            Because of = () =>
+            {
+                var serializer = new TestJsonSerializer();
+                json = serializer.Serialize(Country.US.Subdivisions[0]);
+
+            };
+
+            It should_be_equal = () => json.ShouldEqual("""{"$type":"Elders.Iso3166.Subdivision, Elders.CountryCodes","0":-1124723457}""");
+        }
+
+        class when_deserializing_subdivision
+        {
+            static Subdivision us_al;
+            Because of = () =>
+            {
+                var serializer = new TestJsonSerializer();
+                us_al = serializer.Deserialize<Subdivision>("""{"$type":"Elders.Iso3166.Subdivision, Elders.CountryCodes","0":-1124723457}""");
+            };
+
+            It should_be_equal = () => us_al.ShouldEqual(Country.US.Subdivisions[0]);
+        }
     }
 }

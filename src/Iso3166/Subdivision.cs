@@ -26,7 +26,7 @@ namespace Elders.Iso3166
         private static readonly Dictionary<Country, List<Subdivision>> _subdivisionsPerCountry = new Dictionary<Country, List<Subdivision>>();
 
         [DataMember(Order = 0)]
-        private int _subdivisionId;
+        private readonly int _subdivisionId;
 
         public readonly int Id => _subdivisionId;
 
@@ -282,6 +282,8 @@ namespace Elders.Iso3166
             ISO_3166_2_ZM();
             ISO_3166_2_ZW();
         }
+
+        public Subdivision() { _subdivisionId = 0; }
 
         public Subdivision(string code) : this(HashCodeUtility.GetPersistentHashCode(code)) { }
 
