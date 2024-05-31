@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/Elders/CountryCodes/compare/v2.0.1...v2.0.2) (2024-05-31)
+
+
+### Bug Fixes
+
+* Subdivision serialization ([183c20f](https://github.com/Elders/CountryCodes/commit/183c20fbda32249e81f53e83a83266b114193b12))
+
 ## [2.0.1](https://github.com/Elders/CountryCodes/compare/v2.0.0...v2.0.1) (2024-05-31)
 
 
