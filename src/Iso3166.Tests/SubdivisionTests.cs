@@ -80,7 +80,6 @@ namespace Elders.Iso3166.Tests
             {
                 var serializer = new TestJsonSerializer();
                 json = serializer.Serialize(Country.US.Subdivisions[0]);
-
             };
 
             It should_be_equal = () => json.ShouldEqual("""{"$type":"Elders.Iso3166.Subdivision, Elders.CountryCodes","0":-1124723457}""");
@@ -96,6 +95,19 @@ namespace Elders.Iso3166.Tests
             };
 
             It should_be_equal = () => us_al.ShouldEqual(Country.US.Subdivisions[0]);
+        }
+
+        class when_serializing_all_subdivision
+        {
+            static Subdivision[] subdivisions;
+            Because of = () =>
+            {
+                var serializer = new TestJsonSerializer();
+                var json = serializer.Serialize(Country.US.Subdivisions);
+                subdivisions = serializer.Deserialize<Subdivision[]>(json);
+            };
+
+            It should_be_equal = () => subdivisions.ShouldEqual([.. Country.US.Subdivisions]);
         }
     }
 }

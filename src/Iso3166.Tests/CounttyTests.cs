@@ -98,5 +98,18 @@ namespace Elders.Iso3166.Tests
 
             It should_be_equal = () => us.ShouldEqual(Country.US);
         }
+
+        class when_serializing_all_countries
+        {
+            static Country[] countries;
+            Because of = () =>
+            {
+                var serializer = new TestJsonSerializer();
+                var json = serializer.Serialize(Country.GetAllCountries().ToArray());
+                countries = serializer.Deserialize<Country[]>(json);
+            };
+
+            It should_be_equal = () => countries.ShouldEqual(Country.GetAllCountries().ToArray());
+        }
     }
 }
