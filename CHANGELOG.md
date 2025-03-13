@@ -1,3 +1,10 @@
+## [2.0.3](https://github.com/Elders/CountryCodes/compare/v2.0.2...v2.0.3) (2025-03-13)
+
+
+### Bug Fixes
+
+* Fixing names for 3 countries in ES ([0e80461](https://github.com/Elders/CountryCodes/commit/0e804612df0f21698560f23d15660f81ea687717))
+
 ## [2.0.2](https://github.com/Elders/CountryCodes/compare/v2.0.1...v2.0.2) (2024-05-31)
 
 
