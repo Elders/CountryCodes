@@ -30,13 +30,13 @@ namespace Elders.Iso3166
             Add(Country.ES, "AN", "Andalusia");
             Add(Country.ES, "AR", "Aragon");
             Add(Country.ES, "AS", "Principality of Asturias");
-            Add(Country.ES, "CN", "anary Islands");
+            Add(Country.ES, "CN", "Canary Islands");
             Add(Country.ES, "CB", "Cantabria");
             Add(Country.ES, "CL", "Castile and León");
             Add(Country.ES, "CM", "Castile-La Mancha");
-            Add(Country.ES, "CT", "atalonia");
+            Add(Country.ES, "CT", "Catalonia");
             Add(Country.ES, "CE", "Ceuta");
-            Add(Country.ES, "EX", "xtremadura");
+            Add(Country.ES, "EX", "Extremadura");
             Add(Country.ES, "GA", "Galicia");
             Add(Country.ES, "IB", "Balearic Islands");
             Add(Country.ES, "RI", "La Rioja	La Rioja");
