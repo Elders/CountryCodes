@@ -23,20 +23,8 @@ namespace Elders.Iso3166
             Add(Country.RW, "03", "Northern");
             Add(Country.RW, "04", "Western");
             Add(Country.RW, "05", "Southern");
-            Add(Country.RW, "C", "Butare");
-            Add(Country.RW, "v", "Byumba");
-            Add(Country.RW, "E", "Cyangugu");
-            Add(Country.RW, "D", "Gikongoro");
-            Add(Country.RW, "G", "Gisenyi");
-            Add(Country.RW, "B", "Gitarama");
-            Add(Country.RW, "J", "Kibungo");
-            Add(Country.RW, "F", "Kibuye");
-            Add(Country.RW, "K", "Kigali-Rural");
-            Add(Country.RW, "L", "Kigali-Ville");
-            Add(Country.RW, "M", "Mutara");
-            Add(Country.RW, "H", "Ruhengeri");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.RW].Count == 17, $"{Country.RW} Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.RW].Count == 5, $"{Country.RW} Number of subdivisions is wrong.");
         }
     }
 }
