@@ -34,8 +34,9 @@ namespace Elders.Iso3166
             Add(Country.GR, "H", "Central Greece");
             Add(Country.GR, "E", "Thessaly");
             Add(Country.GR, "K", "Northern Aegean");
+            Add(Country.GR, "69", "Ágion Óros");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.GR].Count == 13, $"{Country.YT} Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.GR].Count == 14, $"{Country.GR} Number of subdivisions is wrong.");
         }
     }
 }

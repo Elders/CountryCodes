@@ -19,6 +19,12 @@ namespace Elders.Iso3166
         /// </remarks>
         internal static void ISO_3166_2_NL()
         {
+            Add(Country.NL, "AW", "Aruba");
+            Add(Country.NL, "CW", "Curaçao");
+            Add(Country.NL, "SX", "Sint Maarten");
+            Add(Country.NL, "BQ1", "Bonaire");
+            Add(Country.NL, "BQ2", "Saba");
+            Add(Country.NL, "BQ3", "Sint Eustatius");
             Add(Country.NL, "DR", "Drenthe");
             Add(Country.NL, "FL", "Flevoland");
             Add(Country.NL, "FR", "Friesland");
@@ -32,7 +38,7 @@ namespace Elders.Iso3166
             Add(Country.NL, "ZE", "Zeeland");
             Add(Country.NL, "ZH", "South Holland");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.NL].Count == 12, $"{Country.NL} Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.NL].Count == 18, $"{Country.NL} Number of subdivisions is wrong.");
         }
     }
 }

@@ -41,8 +41,9 @@ namespace Elders.Iso3166
             Add(Country.ME, "22", "Gusinje");
             Add(Country.ME, "23", "Petnjica");
             Add(Country.ME, "24", "Tuzi");
+            Add(Country.ME, "25", "Zeta");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.ME].Count == 24, $"{Country.ME} Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.ME].Count == 25, $"{Country.ME} Number of subdivisions is wrong.");
         }
     }
 }

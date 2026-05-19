@@ -71,7 +71,7 @@ namespace Elders.Iso3166
             Add(Country.FR, "17", "Charente-Maritime");
             Add(Country.FR, "18", "Cher");
             Add(Country.FR, "19", "Corrèze");
-            Add(Country.FR, "2A", "Corse-du-Sud");
+            Add(Country.FR, "20A", "Southern Corsica");
             Add(Country.FR, "21", "Côte-d'Or");
             Add(Country.FR, "22", "Côtes-d'Armor");
             Add(Country.FR, "23", "Creuse");
@@ -88,7 +88,7 @@ namespace Elders.Iso3166
             Add(Country.FR, "33", "Gironde");
             Add(Country.FR, "971", "Guadeloupe");
             Add(Country.FR, "973", "Guyane");
-            Add(Country.FR, "2B", "Haute-Corse");
+            Add(Country.FR, "20B", "Upper Corsica");
             Add(Country.FR, "31", "Haute-Garonne");
             Add(Country.FR, "43", "Haute-Loire");
             Add(Country.FR, "52", "Haute-Marne");

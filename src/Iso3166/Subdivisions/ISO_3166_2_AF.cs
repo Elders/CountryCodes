@@ -14,6 +14,7 @@ namespace Elders.Iso3166
             Add(Country.AF, "BGL", "Baghlan");
             Add(Country.AF, "BAL", "Balkh");
             Add(Country.AF, "BAM", "Bamyan");
+            Add(Country.AF, "BDG", "Bādghīs");
             Add(Country.AF, "DAY", "Daykundi");
             Add(Country.AF, "FRA", "Farah");
             Add(Country.AF, "FYB", "Faryab");
@@ -44,7 +45,7 @@ namespace Elders.Iso3166
             Add(Country.AF, "WAR", "Wardak");
             Add(Country.AF, "ZAB", "Zabul");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.AF].Count == 33, $"{Country.AF} Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.AF].Count == 34, $"{Country.AF} Number of subdivisions is wrong.");
         }
     }
 }

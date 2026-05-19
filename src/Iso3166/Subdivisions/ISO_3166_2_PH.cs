@@ -85,7 +85,8 @@ namespace Elders.Iso3166
             Add(Country.PH, "LAN", "Lanao del Norte");
             Add(Country.PH, "LAS", "Lanao del Sur");
             Add(Country.PH, "LEY", "Leyte	Le");
-            Add(Country.PH, "MAG", "Maguindanao");
+            Add(Country.PH, "MGN", "Maguindanao del Norte");
+            Add(Country.PH, "MGS", "Maguindanao del Sur");
             Add(Country.PH, "MAD", "Marinduque");
             Add(Country.PH, "MAS", "Masbate");
             Add(Country.PH, "MDC", "Mindoro Occidental");
@@ -122,7 +123,7 @@ namespace Elders.Iso3166
             Add(Country.PH, "ZAS", "Zamboanga del Sur");
             Add(Country.PH, "ZSI", "Zamboanga Sibugay");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.PH].Count == 98, $"{Country.PH} Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.PH].Count == 99, $"{Country.PH} Number of subdivisions is wrong.");
         }
     }
 }
