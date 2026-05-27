@@ -18,13 +18,6 @@ namespace Elders.Iso3166
         /// </remarks>
         internal static void ISO_3166_2_ID()
         {
-            Add(Country.ID, "JW", "Jawa");
-            Add(Country.ID, "KA", "Kalimantan");
-            Add(Country.ID, "ML", "Maluku");
-            Add(Country.ID, "NU", "Nusa Tenggara");
-            Add(Country.ID, "PP", "Papua");
-            Add(Country.ID, "SL", "Sulawesi");
-            Add(Country.ID, "SM", "Sumatera");
             Add(Country.ID, "AC", "Aceh");
             Add(Country.ID, "BA", "Bali");
             Add(Country.ID, "BT", "Banten");
@@ -64,7 +57,7 @@ namespace Elders.Iso3166
             Add(Country.ID, "SU", "North Sumatra");
             Add(Country.ID, "YO", "Yogyakarta");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.ID].Count == 45, $"{Country.ID} Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.ID].Count == 38, $"{Country.ID} Number of subdivisions is wrong.");
         }
     }
 }

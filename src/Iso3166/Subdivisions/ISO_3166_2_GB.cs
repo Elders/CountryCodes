@@ -21,13 +21,6 @@ namespace Elders.Iso3166
         /// </remarks>
         internal static void ISO_3166_2_GB()
         {
-            Add(Country.GB, "ENG", "England");
-            Add(Country.GB, "NIR", "Northern Ireland");
-            Add(Country.GB, "SCT", "Scotland");
-            Add(Country.GB, "WLS", "Wales");
-            Add(Country.GB, "EAW", "England and Wales");
-            Add(Country.GB, "GBN", "Great Britain");
-            Add(Country.GB, "UKM", "United Kingdom");
             Add(Country.GB, "CAM", "Cambridgeshire");
             Add(Country.GB, "CMA", "Cumbria");
             Add(Country.GB, "DBY", "Derbyshire");
@@ -246,7 +239,7 @@ namespace Elders.Iso3166
             Add(Country.GB, "VGL", "Vale of Glamorgan, The [Bro Morgannwg GB-BMG]");
             Add(Country.GB, "WRX", "Wrexham [Wrecsam GB-WRC]");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.GB].Count == 224, $"{Country.GB} Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.GB].Count == 217, $"{Country.GB} Number of subdivisions is wrong.");
         }
     }
 }
