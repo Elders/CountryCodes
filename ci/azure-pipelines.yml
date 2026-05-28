@@ -14,48 +14,54 @@ pool:
   vmImage: ubuntu-latest
 
 stages:
-- stage : DeployStage
+- stage: DeployStage
   displayName: 'Deploy stage'
-    jobs:
-    - job: build_pack_publish
+  jobs:
+  - job: build_pack_publish
 
-      steps:
-      - checkout: self
-        clean: true
-        persistCredentials: true
+    steps:
+    - checkout: self
+      clean: true
+      persistCredentials: true
 
-      - task: DotNetCoreCLI@2
-        name: test
-        inputs:
-          command: test
-          projects: '**/*Tests.csproj'
+    - task: UseDotNet@2
+      displayName: 'Use .NET SDK'
+      inputs:
+        packageType: sdk
+        version: 10.x
 
-      - task: DotNetCoreCLI@2
-        name: build
-        inputs:
-          command: build
-          projects: 'src/$(PROJECT_DIR)/*.csproj'
+    - task: DotNetCoreCLI@2
+      name: test
+      inputs:
+        command: test
+        projects: '**/*Tests.csproj'
 
-      - task: Bash@3
-        name: release
-        displayName: semantic release + pack
-        env:
-          STAGING_PATH: $(Build.StagingDirectory)
-        inputs:
-          targetType: 'inline'
-          script: |
-            time curl -L https://github.com/Elders/blob/releases/download/SemRel-01/node_modules.tar.gz | tar mx -I pigz
-            time npx semantic-release --no-ci
-            # few commands for debugging purposes
-            ls -l $STAGING_PATH/*.nupkg
-            echo dotnet msbuild `dotnet msbuild --version`
-            echo dotnet nuget `dotnet nuget --version`
-            echo dotnet `dotnet --version`
+    - task: DotNetCoreCLI@2
+      name: build
+      inputs:
+        command: build
+        projects: 'src/$(PROJECT_DIR)/*.csproj'
 
-      - task: Bash@3
-        name: publish
-        displayName: nuget push to nuget.org
-        condition: and(eq(variables['newVer'], 'yes'), succeeded())
-        inputs:
-          targetType: 'inline'
-          script: 'dotnet nuget push $(Build.StagingDirectory)/*.nupkg --api-key $(NUGET_KEY) --source https://api.nuget.org/v3/index.json --skip-duplicate'
+    - task: Bash@3
+      name: release
+      displayName: semantic release + pack
+      env:
+        STAGING_PATH: $(Build.StagingDirectory)
+      inputs:
+        targetType: 'inline'
+        script: |
+          time curl -fL https://github.com/Elders/blob/releases/download/SemRel-01/node_modules.tar.gz | tar mx -I pigz
+          time npx semantic-release --no-ci
+          # few commands for debugging purposes
+          ls -l $STAGING_PATH/*.nupkg
+          echo dotnet msbuild `dotnet msbuild --version`
+          echo dotnet nuget `dotnet nuget --version`
+          echo dotnet `dotnet --version`
+
+    - task: Bash@3
+      name: publish
+      displayName: nuget push to nuget.org
+      condition: and(eq(variables['newVer'], 'yes'), succeeded())
+      inputs:
+        targetType: 'inline'
+        script: 'dotnet nuget push $(Build.StagingDirectory)/*.nupkg --api-key $(NUGET_KEY) --source https://api.nuget.org/v3/index.json --skip-duplicate'
