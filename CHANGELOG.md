@@ -1,3 +1,10 @@
+## [2.0.4](https://github.com/Elders/CountryCodes/compare/v2.0.3...v2.0.4) (2026-05-28)
+
+
+### Bug Fixes
+
+* Brings subdivision data up-to-date ([36242fb](https://github.com/Elders/CountryCodes/commit/36242fbf52a3601e689f63b3c0f10b303a6983e3))
+
 ## [2.0.3](https://github.com/Elders/CountryCodes/compare/v2.0.2...v2.0.3) (2025-03-13)
 
 
