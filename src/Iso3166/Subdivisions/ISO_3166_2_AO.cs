@@ -18,6 +18,11 @@ namespace Elders.Iso3166
         internal static void ISO_3166_2_AO()
         {
             Add(Country.AO, "BGO", "Bengo");
+            Add(Country.AO, "BGU", "Benguela");
+            Add(Country.AO, "BIE", "Bié");
+            Add(Country.AO, "CAB", "Cabinda");
+            Add(Country.AO, "CCU", "Cuando Cubango");
+            Add(Country.AO, "CNO", "Cuanza-Norte");
             Add(Country.AO, "CUS", "Cuanza-Sul");
             Add(Country.AO, "CNN", "Cunene");
             Add(Country.AO, "HUA", "Huambo");
@@ -31,7 +36,7 @@ namespace Elders.Iso3166
             Add(Country.AO, "UIG", "Uíge");
             Add(Country.AO, "ZAI", "Zaire");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.AO].Count == 13, $"{Country.AO} Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.AO].Count == 18, $"{Country.AO} Number of subdivisions is wrong.");
         }
     }
 }

@@ -16,7 +16,6 @@ namespace Elders.Iso3166
         /// </remarks>
         internal static void ISO_3166_2_GH()
         {
-            Add(Country.GH, "BA", "Brong-Ahafo");
             Add(Country.GH, "AF", "Ahafo");
             Add(Country.GH, "AH", "Ashanti");
             Add(Country.GH, "BO", "Bono");
@@ -34,7 +33,7 @@ namespace Elders.Iso3166
             Add(Country.GH, "WP", "Western");
             Add(Country.GH, "WN", "Western North");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.GH].Count == 17, $"{Country.GH} Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.GH].Count == 16, $"{Country.GH} Number of subdivisions is wrong.");
         }
     }
 }

@@ -43,6 +43,7 @@ namespace Elders.Iso3166
             Add(Country.ID, "PA", "Papua");
             Add(Country.ID, "PB", "West Papua");
             Add(Country.ID, "PE", "Highland Papua");
+            Add(Country.ID, "PD", "Southwest Papua");
             Add(Country.ID, "PS", "South Papua");
             Add(Country.ID, "PT", "Central Papua");
             Add(Country.ID, "RI", "Riau");
@@ -56,7 +57,7 @@ namespace Elders.Iso3166
             Add(Country.ID, "SU", "North Sumatra");
             Add(Country.ID, "YO", "Yogyakarta");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.ID].Count == 37, $"{Country.ID} Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.ID].Count == 38, $"{Country.ID} Number of subdivisions is wrong.");
         }
     }
 }

@@ -16,24 +16,12 @@ namespace Elders.Iso3166
         /// </remarks>
         internal static void ISO_3166_2_BH()
         {
-            Add(Country.BH, "01", "Al Ḩadd");
-            Add(Country.BH, "03", "Al Manāmah");
-            Add(Country.BH, "10", "Al Minţaqah al Gharbīyah");
-            Add(Country.BH, "07", "Al Minţaqah al Wusţá");
-            Add(Country.BH, "05", "Al Minţaqah ash Shamālīyah");
-            Add(Country.BH, "02", "Al Muḩarraq");
-            Add(Country.BH, "09", "Ar Rifāٰ");
-            Add(Country.BH, "04", "Jidd Ḩafş");
-            Add(Country.BH, "12", "Madīnat Ḩamad");
-            Add(Country.BH, "08", "Madīnat ٰĪsá");
-            Add(Country.BH, "11", "Minţaqat Juzur Ḩawār");
-            Add(Country.BH, "06", "Sitrah");
             Add(Country.BH, "13", "Capital Governorate");
             Add(Country.BH, "14", "Southern Governorate");
             Add(Country.BH, "15", "Muharraq Governorate");
             Add(Country.BH, "17", "Northern Governorate");
 
-            Debug.Assert(_subdivisionsPerCountry[Country.BH].Count == 16, $"{Country.BH} Number of subdivisions is wrong.");
+            Debug.Assert(_subdivisionsPerCountry[Country.BH].Count == 4, $"{Country.BH} Number of subdivisions is wrong.");
         }
     }
 }

@@ -21,7 +21,7 @@ namespace Elders.Iso3166
             Add(Country.IN, "AR", "Arunāchal Pradesh");
             Add(Country.IN, "AS", "Assam");
             Add(Country.IN, "BR", "Bihār");
-            Add(Country.IN, "CT", "Chhattīsgarh");
+            Add(Country.IN, "CG", "Chhattīsgarh");
             Add(Country.IN, "GA", "Goa");
             Add(Country.IN, "GJ", "Gujarāt");
             Add(Country.IN, "HR", "Haryāna");
@@ -35,14 +35,14 @@ namespace Elders.Iso3166
             Add(Country.IN, "ML", "Meghālaya");
             Add(Country.IN, "MZ", "Mizoram");
             Add(Country.IN, "NL", "Nāgāland");
-            Add(Country.IN, "OR", "Odisha");
+            Add(Country.IN, "OD", "Odisha");
             Add(Country.IN, "PB", "Punjab");
             Add(Country.IN, "RJ", "Rājasthān");
             Add(Country.IN, "SK", "Sikkim");
             Add(Country.IN, "TN", "Tamil Nādu");
-            Add(Country.IN, "TG", "Telangāna");
+            Add(Country.IN, "TS", "Telangāna");
             Add(Country.IN, "TR", "Tripura");
-            Add(Country.IN, "UT", "Uttarākhand");
+            Add(Country.IN, "UK", "Uttarākhand");
             Add(Country.IN, "UP", "Uttar Pradesh");
             Add(Country.IN, "WB", "West Bengal");
             Add(Country.IN, "AN", "Andaman and Nicobar Islands");
