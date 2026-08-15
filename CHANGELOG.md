@@ -1,3 +1,5 @@
+# [3.0.0](https://github.com/Elders/CountryCodes/compare/v2.0.4...v3.0.0) (2026-08-15)
+
 ## [2.0.4](https://github.com/Elders/CountryCodes/compare/v2.0.3...v2.0.4) (2026-05-28)
 
 
