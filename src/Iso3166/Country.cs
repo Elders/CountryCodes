@@ -816,6 +816,16 @@ namespace Elders.Iso3166
 
         public readonly ReadOnlyCollection<Subdivision> Subdivisions => Subdivision.GetCountrySubdivisions(this);
 
+        /// <summary>
+        ///     Whether this country belongs to <paramref name="zone"/>.
+        /// </summary>
+        public readonly bool IsIn(EconomicZone zone) => zone.Contains(this);
+
+        /// <summary>
+        ///     Every economic zone this country belongs to.
+        /// </summary>
+        public readonly ReadOnlyCollection<EconomicZone> Zones => EconomicZone.GetZonesOf(this);
+
         private static int FindId(string countryCode)
         {
             foreach (var country in _allCountries) // replacing Linq with foreach massively reduces allocations and improves object initialization time
